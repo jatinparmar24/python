@@ -295,8 +295,12 @@ print(l1)
 # mathematical operations =   union() , intersection() , difference() , symmetric_difference() , isdisjoint() , issubset() , issubsuperset()
 
 
-
-
+# 10 = control statement
+# python is a squential + conditional statement
+# 
+# 10a = conditional statement = if , if-else , if-elif , if-elif-else
+# 10b =             statement  = while , for
+# 10c =            staement    = continue , break , pass
 
 
 
@@ -1354,3 +1358,89 @@ print(x.issuperset(y))
 # False
 print(y.issuperset(x))
 # False
+
+
+
+# condiational statement =============================================
+
+# 1 = conditional statement
+# a if
+x=10
+y=20
+
+if x<y:
+    print("not")
+
+print("hello..........")
+
+# not
+# hello..........
+# if condition is true then it provide ans
+
+x=10
+y=20
+
+if x>y:
+    print("not")
+
+print("hello..........")
+# hello..........
+# if condition is false then it avoid statement and print next line if present
+
+
+
+
+# b if-else
+
+x=int(input("Enter Any Number"))
+# takes input from user and that is integer
+
+if x%2==0:
+    print("Even Number")
+
+else:
+    print("Odd Number")
+
+
+
+
+# wrong approach==============
+# we don't use 'True' in if condition because it is hard coding
+x=int(input("Enter Any Number"))
+
+if True:
+    print("Even Number")
+
+else:
+    print("Odd Number")
+# it gives even number beacuse it is true so if u say odd number it gives answer 'even number'
+# wrong approach==============
+
+
+
+# question
+x=int(input("Enter 1st Number"))
+y=int(input("Enter 2nd Number"))
+
+
+if x>y:
+    print("x is greater")
+
+else:
+    print(f'{y} is greater')
+
+
+# question
+x=int(input("Enter your age"))
+
+
+if x>=18:
+    print("u can vote")
+
+else:
+    print("you can't vote")
+
+
+
+# nested if
+
