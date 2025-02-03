@@ -299,7 +299,10 @@ print(l1)
 # python is a squential + conditional statement
 # 
 # 10a = conditional statement = if , if-else , if-elif , if-elif-else
-# 10b =             statement  = while , for
+# 10b =  iterative statement  = while , for
+# while   =  1 = initialization      2 = condition check   = (a) If True = execute block of code  (b) Increase/Decrease (c) If condition False = break/terminate loop
+# syntax  =  initialization(i)  ,  while(condition check) , block of code  , i=i+1 / i=i-1
+
 # 10c =            staement    = continue , break , pass
 
 
@@ -317,6 +320,23 @@ print(l1)
 
 
 
+
+
+
+
+
+# imp = ============================
+
+# print("Hello")
+# print("Hii")
+# output = hello
+# output = Hii
+
+# if we want to print in one line so
+
+# print("Hello", end=',')
+# print("Hii")
+# output = Hello,Hii
 
 
 
@@ -1513,3 +1533,32 @@ elif (c>a and c>b):
 
 else:
     print("Please Enter Valid Input")
+
+
+
+    # iterative statement
+
+    # while loop
+    # print natural number
+n=int(input("Enter Any Number"))
+i=1
+while i<=n:
+    print(i)
+    i=i+1
+# ans print from 1 to 10
+
+# 2's table in table format
+n=int(input("Enter Any Number"))
+i=1
+while i<=n:
+    x=2*i
+    print(f'2*{i}={x}')
+    i=i+1
+
+# 10 even number
+n=int(input("Enter Any Number"))
+i=1
+while i<=n:
+    x=2*i 
+    print(x)
+    i=i+1
