@@ -1562,3 +1562,45 @@ while i<=n:
     x=2*i 
     print(x)
     i=i+1
+
+# print counting from 1 to 10 in horizontal line with coma seperate
+
+n=int(input("Enter Any Number"))
+i=1
+while i<=n:
+    if i<n:
+        print(i,end=',')
+
+    else:
+        print(i)
+    i=i+1
+
+print("hello")
+# ans 1,2,3,4,5,6,7,8,9,10
+# ans hello
+
+
+# digit count of a number with floor method = //
+n=int(input("Enter Any Number"))
+digit=0
+while n>0:
+    digit=digit+1
+    n=n//10
+print(digit)
+# now if we print n then ans is 0
+
+
+# sum of number
+n=int(input("Enter Any Number"))
+sum=0
+while n>0:
+    last_digit=n%10
+    sum=sum+last_digit**2
+    n=n//10
+print(sum)
+print(n)
+# sum=
+# n=0
+
+
+# armstromg number

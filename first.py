@@ -1,7 +1,8 @@
 n=int(input("Enter Any Number"))
-i=1
-while i<=n:
-    x=2*i
-    # print(f'2*{i}={x}')
-    print(x)
-    i=i+1
+sum=0
+while n>0:
+    last_digit=n%10
+    sum=sum+last_digit**2
+    n=n//10
+print(sum)
+print(n)
