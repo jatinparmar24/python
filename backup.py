@@ -307,7 +307,7 @@ print(l1)
 # syntax  =  for i in collection 
 #          collections are = list , string , tuple , dict
 
-# 10c =            staement    = continue , break , pass
+# 10c =            statement    = continue , break , pass
 
 
 
@@ -316,8 +316,36 @@ print(l1)
 
 
 
+# range(start,stop,step)          step(from where u have to go)   
+# it return collection
+
+x=[-1,-2,-3,-4,-5,-6,-7,-8,-9,-10]
+x=range(-1,-11)
+print(list(x))
+# empty list
+
+x=[-1,-2,-3,-4,-5,-6,-7,-8,-9,-10]
+x=range(-1,-11,-1)
+print(list(x))
+# ans [-1, -2, -3, -4, -5, -6, -7, -8, -9, -10]
+
+# even number
+n=50
+x=range(2,51,2)
+print(list(x))
+# ans [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50]
 
 
+# even number in runtime
+n=int(input("Enter number"))
+x=range(2,n+1,2)
+print(list(x))
+
+
+# odd number in runtime
+n=int(input("Enter number"))
+x=range(1,n+1,2)
+print(list(x))
 
 
 
@@ -1634,8 +1662,8 @@ n=int(input("Enter Any Number"))
 x=n
 rv_digit=0
 while n>0:
-    n=n%10
-    rv_digit=rv_digit*10+x
+    last_digit=n%10
+    rv_digit=rv_digit*10+last_digit
     n=n//10
 if x==rv_digit:
     print(f'{x} is pallindrom')
@@ -1645,12 +1673,25 @@ else:
 
 
 
+# pallindrom with slice
+
+n=input("Enter String")
+
+if n==n[::-1]:
+    print("pallindrom")
+
+else:
+    print("not")
+
+
 # 2 for loop
+# questions = 
 
 n=input("Enter Your Name")
 
 for i in n:
     print(i)
+
 
 # add 4 char
 
@@ -1659,3 +1700,16 @@ for i in n:
     x=ord(i)+4
     y=chr(x)
     print(y,end='')
+
+
+# pallindrom
+n=input("Enter string")
+l=len(n)
+x=''
+for i in range(l-1,-1,-1):
+    x=x+n[i]
+if n==x:
+    print ("Pallindrom")
+   
+else:
+    print("not")
