@@ -303,6 +303,10 @@ print(l1)
 # while   =  1 = initialization      2 = condition check   = (a) If True = execute block of code  (b) Increase/Decrease (c) If condition False = break/terminate loop
 # syntax  =  initialization(i)  ,  while(condition check) , block of code  , i=i+1 / i=i-1
 
+# for    =  
+# syntax  =  for i in collection 
+#          collections are = list , string , tuple , dict
+
 # 10c =            staement    = continue , break , pass
 
 
@@ -338,7 +342,10 @@ print(l1)
 # print("Hii")
 # output = Hello,Hii
 
+# imp ==============================
 
+#  char to ascii==ord()
+#  ascii to char == chr()
 
 
 
@@ -1538,7 +1545,7 @@ else:
 
     # iterative statement
 
-    # while loop
+ # 1= while loop
     # print natural number
 n=int(input("Enter Any Number"))
 i=1
@@ -1604,3 +1611,51 @@ print(n)
 
 
 # armstromg number
+n=int(input("Enter Any Number"))
+x=y=n
+digit=0
+while n>0:
+    digit=digit+1
+    n=n//10
+sum=0
+while y>0:
+     last_digit=y%10
+     sum=sum+last_digit**digit
+     y=y//10
+if x==sum:
+    print(f'{x} is armstrong')
+
+else:
+    print(f'{x} is not a armstrong')
+
+
+# pallindrom
+n=int(input("Enter Any Number"))
+x=n
+rv_digit=0
+while n>0:
+    n=n%10
+    rv_digit=rv_digit*10+x
+    n=n//10
+if x==rv_digit:
+    print(f'{x} is pallindrom')
+else:
+    print(f'{x}is not')
+
+
+
+
+# 2 for loop
+
+n=input("Enter Your Name")
+
+for i in n:
+    print(i)
+
+# add 4 char
+
+n='abcd'
+for i in n:
+    x=ord(i)+4
+    y=chr(x)
+    print(y,end='')
