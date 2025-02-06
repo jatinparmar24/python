@@ -18,6 +18,7 @@
 
 # ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
 
+
 # 3=identifiers         ===============================================================================================
 
 # 4=operators            =======================================================================================================
@@ -325,6 +326,17 @@ print(l1)
 
 # 10c =  transfer statement    = continue , break , pass
 
+# break = exit from loop
+# continue = skip current iteration
+# pass = skip current block                                                                                                             
+
+
+
+# 11 = pattern
+
+
+
+
 
 
 
@@ -366,6 +378,13 @@ print(list(x))
 
 
 
+# imp =========
+
+# eval()   = 10 = return int , 'jatin' = return str  , [10,20,30] = return list
+
+x=eval(input("Enter any thing"))
+print(x)
+print(type(x))
 
 
 
@@ -1729,3 +1748,60 @@ if n==x:
    
 else:
     print("not")
+
+
+    # transfer statement    
+
+# questions ==== 
+
+# break = exit from loop=======
+
+	n=int(input("enter number"))
+2	i=1
+3	while i<=n:
+4	    if i==6:
+5	        break
+6	    print(i)
+7	    i=i+1
+8	    
+9	print("hello")
+
+# continue = skip current iteration
+
+n=int(input("enter number"))
+2	i=1
+3	while i<=n:
+4	    if i==6:
+5	        i=i+1
+6	        continue
+7	    print(i)
+8	    i=i+1
+# skip 6 from loop
+
+
+# infinitie loop
+	n=int(input("enter number"))
+	i=1
+	while i<=n:
+	    if i==6:
+	        print(i)
+	        continue
+	    print(i)
+	    i=i+1
+# print 6 for infinte
+
+
+# pass = skip current block
+
+	
+
+
+
+# patterns
+# n is the number of row
+
+n=10
+i=1
+while i<=n:
+    print(i*'*')
+    i=i+1
