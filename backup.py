@@ -1,10 +1,22 @@
-# topics
+# topics ======*********************************************************************===========================
 
-# 1=keyward=35
+# 1=keyward=35 ==========
+
+# True , False , None , and , as ,assert , async , await , break , class , continue , def , del , elif , else , except , finally ,
+#  for , from , global , if , import , in , is , lambda , nonlocal , not , or , pass , raise , return , try , while , with , yield 
+
 # softkward=4
+
+# 'match' , 'case' , 'type' , '_'
+
 # special symbol=32
 
-# 2=punctation
+#  + , - , * , = ,  ** , / , //(floor) , % , << , >> , & , | , ^ , ~ , < > , <= , >= , == , != , <> , += , -= , *= , /= , //= , %= , **= , &= ,
+#  |= , ^= , >>= , <<== ,
+
+# 2=punctation = 32
+
+# ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
 
 # 3=identifiers         ===============================================================================================
 
