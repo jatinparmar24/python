@@ -6,9 +6,9 @@
 
 # 2=punctation
 
-# 3=identifiers         (line = 186)
+# 3=identifiers         ===============================================================================================
 
-# 4=operators            (line = 235)
+# 4=operators            =======================================================================================================
 
 # a = arithmatic operators===   [    +,-,*,/,%,//=floor,**=power  ]  ==arithmatic operators return value
 # b = comparasion operators====    (== , != , > ,< , <=, >=)  ==  return boolean
@@ -25,7 +25,8 @@
 #  1c=Decimal=(0,1,2,3,4,5,6,7,8,9)  ==  length or base =10
 #  1d= Hexadecimal=([0,1,2,3,4,5,6,7,8,9]+[A,B,C,D,E,F]||[a,b,c,d,e,f]) =  length or base =16
 
-# 5=literals   [The value asigned to a constant variable is called literals]           
+# 5=literals   [The value asigned to a constant variable is called literals]          =====================================================
+
 # literals types===  [numeric, string, boolen, list, tuple, dict , (set,frozenset)]  set and frozenset are not used in web development
 # and these types are called data types
 
@@ -63,7 +64,7 @@
 # order not fixed \\ provide random order
 
 
-# 6 (                                         (line = 62)
+# 6 (                            ==============================================================
 
 #  pythom is not a call by value language    (not)
 
@@ -131,7 +132,8 @@ print(id(s2))
 
 
 
-# 7 = indexing                                                 
+# 7 = indexing            =========================================================================================================
+
 # pyhton support positive indexing = points
 # a = start from 0
 # b = read direction = left to right
@@ -153,7 +155,7 @@ print(id(s2))
 # indexing works on ordered collection = like == string , list , tuple
 # unordered collection = set and frozenset    here indexing not work
 
-# 8 = slicing
+# 8 = slicing          ======================================================================================================
 
 # slicing works on ordered collection = like == string , list , tuple
 # syntax   =    collecton[start : stop : step/jump/direction]
@@ -170,7 +172,7 @@ print(id(s2))
 
 
 
-# 9 = data-types   ===   
+# 9 = data-types   ===================================================================================================================== 
 
 
 # 9a = numeric === (integer ,float , complex)
@@ -295,11 +297,13 @@ print(l1)
 # mathematical operations =   union() , intersection() , difference() , symmetric_difference() , isdisjoint() , issubset() , issubsuperset()
 
 
-# 10 = control statement
+# 10 = control statement         ===============================================================================
+
 # python is a squential + conditional statement
 # 
 # 10a = conditional statement = if , if-else , if-elif , if-elif-else
-# 10b =  iterative statement  = while , for
+
+# 10b =  looping / iterative statement  = while , for
 # while   =  1 = initialization      2 = condition check   = (a) If True = execute block of code  (b) Increase/Decrease (c) If condition False = break/terminate loop
 # syntax  =  initialization(i)  ,  while(condition check) , block of code  , i=i+1 / i=i-1
 
@@ -307,7 +311,7 @@ print(l1)
 # syntax  =  for i in collection 
 #          collections are = list , string , tuple , dict
 
-# 10c =            statement    = continue , break , pass
+# 10c =  transfer statement    = continue , break , pass
 
 
 
