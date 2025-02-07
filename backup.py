@@ -1877,7 +1877,7 @@ while i<n:
 #     *
 
 # pyramid
-# u can give space before or after doesn't matter  = ' *' = '* '
+# u can give space before or after (*) that doesn't matter  = ' *' = '* '
 n=int(input("Enter row"))
 i=1
 while i<=n:
@@ -1891,7 +1891,7 @@ while i<=n:
 #  * * * * *
 
 # inverted pyramid
-# u can give space before or after doesn't matter  = ' *' = '* '
+# u can give space before or after (*) that doesn't matter  = ' *' = '* '
 n=int(input("Enter row"))
 i=0
 while i<n:
@@ -1926,6 +1926,73 @@ while i<=n:
     print(i*'*')
     i=i+1
 
+while i>=1:
+    print('*'*i)
+    i=i-1
+
+
+#  design 2 =====
+#     *
+#    **
+#   ***
+#  ****
+# *****
+#  ****
+#   ***
+#    **
+#     *
+
+n=int(input("Enter row = "))
+i=1
+while i<=n:
+    print(' '*(n-i)+'*'*i)
+    i=i+1
+
+i=1
+while i<n:
+    print(' '*i+'*'*(n-i))
+    i=i+1
+
+# design 3 
+# *
+# **
+# ***
+# ****
+# *****
+#  ****
+#   ***
+#    **
+#     *
+
+n=int(input("Enter row = "))
+i=1
+while i<=n:
+    print(i*'*')
+    i=i+1
+i=1
+while i<=n:
+    print(' '*i+'*'*(n-i))
+    i=i+1
+
+# design 4 
+#     *
+#    **
+#   ***
+#  ****
+# *****
+# *****
+# ****
+# ***
+# **
+# *
+
+n=int(input("Enter row"))
+i=1
+while i<=n:
+    print(' '*(n-i)+'*'*i)
+    i=i+1
+
+i=n
 while i>=1:
     print('*'*i)
     i=i-1
