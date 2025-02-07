@@ -1805,11 +1805,127 @@ while i<=n:
 
 
 
-# patterns
+# patterns ==================================================================================
+
 # n is the number of row
 
-n=10
+# right angle triangle
+
+n=int(input("Enter row"))
 i=1
 while i<=n:
     print(i*'*')
     i=i+1
+# ans
+# *
+# **
+# ***
+# ****
+# *****
+
+
+# inverted left 
+n=int(input("Enter row"))
+while n>=1:
+    print('*'*n)
+    n=n-1
+
+    #  0r
+
+n=int(input("Enter row"))
+i=n
+while i>=1:
+    print('*'*i)
+    i=i-1
+
+# ans
+# *****
+# ****
+# ***
+# **
+# *
+
+
+# left angle triangle
+
+n=int(input("Enter row"))
+i=1
+while i<=n:
+    print(' '*(n-i)+'*'*i)
+    i=i+1
+
+# ans
+
+#     *
+#    **
+#   ***
+#  ****
+# *****
+
+# inverted right
+n=int(input("Enter row"))
+i=0
+while i<n:
+    print(' '*i+'*'*(n-i))
+    i=i+1
+
+# ans
+# *****
+#  ****
+#   ***
+#    **
+#     *
+
+# pyramid
+# u can give space before or after doesn't matter  = ' *' = '* '
+n=int(input("Enter row"))
+i=1
+while i<=n:
+    print(' '*(n-i)+' *'*i)
+    i=i+1
+# ans
+#      *
+#     * *
+#    * * *
+#   * * * *
+#  * * * * *
+
+# inverted pyramid
+# u can give space before or after doesn't matter  = ' *' = '* '
+n=int(input("Enter row"))
+i=0
+while i<n:
+    print(' '*i+'* '*(n-i))
+    i=i+1
+
+# ans
+# * * * * * 
+#  * * * * 
+#   * * * 
+#    * * 
+#     * 
+
+
+
+# design  1 =
+# *
+# **
+# ***
+# ****
+# *****
+# ******
+# *****
+# ****
+# ***
+# **
+# *
+
+n=int(input("Enter row"))
+i=1
+while i<=n:
+    print(i*'*')
+    i=i+1
+
+while i>=1:
+    print('*'*i)
+    i=i-1
