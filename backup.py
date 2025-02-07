@@ -664,7 +664,8 @@ print(x >> 2)
 #  ans 2
 
 
-#   literals
+#   literals ==================================================================================
+
 # numeric
 
 # complex
@@ -724,7 +725,7 @@ print(type(x))
 # list
 
 x=[12,2,45,38,"yat"]
-# can't use list in place of x or any other variable
+# can't use list keyward in place of x or any other variable
 print(x)  
 print(type(x))
 # ans <class 'list'>
@@ -929,7 +930,7 @@ print(str1.find('P'))
 
 str1 = " I Love Python"
 print(str1.find('z'))
-# -1                      if not finf then -1 is by default value
+# -1                      if not find then -1 is by default value
 
 str1 = " I Love Python"
 print(str1.index('z'))
@@ -938,7 +939,7 @@ print(str1.index('z'))
 
 str1 = " I Love Python"
 print(str1.split())
-# ['I', 'Love', 'Python']        by default split through space i f value not given
+# ['I', 'Love', 'Python']        by default split through space if value not given
 
 str1 = " I Love Python"
 print(str1.split('o'))
@@ -946,7 +947,7 @@ print(str1.split('o'))
 
 str1 = " I Love Python"
 print(str1.split('o',1))
-# [' I L', 've Python']      if passs 1 then object return 2   ,   if passs 2 then object return 3    and so on   
+# [' I L', 've Python']      if passess 1 then object return 2   ,   if passs 2 then object return 3    and so on   
 
 
 
@@ -1615,7 +1616,7 @@ i=1
 while i<=n:
     print(i)
     i=i+1
-# ans print from 1 to 10
+# ans print from 1 to n
 
 # 2's table in table format
 n=int(input("Enter Any Number"))
@@ -1657,6 +1658,7 @@ while n>0:
     digit=digit+1
     n=n//10
 print(digit)
+print(n)
 # now if we print n then ans is 0
 
 
@@ -1756,43 +1758,49 @@ else:
 
 # break = exit from loop=======
 
-	n=int(input("enter number"))
-2	i=1
-3	while i<=n:
-4	    if i==6:
-5	        break
-6	    print(i)
-7	    i=i+1
-8	    
-9	print("hello")
+n=int(input("Enter Any Number"))
+i=1
+while i<=n:
+    if i==6:
+        break
+    print(i)
+    i=i+1
 
 # continue = skip current iteration
 
-n=int(input("enter number"))
-2	i=1
-3	while i<=n:
-4	    if i==6:
-5	        i=i+1
-6	        continue
-7	    print(i)
-8	    i=i+1
+n=int(input("Enter Any Number"))
+i=1
+while i<=n:
+    if i==6:
+        i=i+1
+        continue
+    print(i)
+    i=i+1
 # skip 6 from loop
 
 
 # infinitie loop
-	n=int(input("enter number"))
-	i=1
-	while i<=n:
-	    if i==6:
-	        print(i)
-	        continue
-	    print(i)
-	    i=i+1
+n=int(input("Enter Any Number"))
+i=1
+while i<=n:
+    if i==6:
+        print(i)
+        continue
+    print(i)
+    i=i+1
 # print 6 for infinte
 
 
 # pass = skip current block
-
+n=int(input("Enter Any Number"))
+i=1
+while i<=n:
+    if i==6:
+        i=i+1
+        pass     
+    print(i)
+    i=i+1
+# print 1 tp n number except 6
 	
 
 
