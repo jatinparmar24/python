@@ -1,10 +1,9 @@
-n=int(input("Enter row"))
-i=1
-while i<=n:
-    print(' '*(n-i)+'*'*i)
-    i=i+1
+x=int(input("Enter First Number = "))
+y=int(input("Enter Second Number = "))
+maxN=max(x,y)
 
-i=n
-while i>=1:
-    print('*'*i)
-    i=i-1
+while True:
+    if maxN%x==0 and maxN%y==0:
+        break
+    maxN=maxN+1
+print(f'LCM of {x} and {y} is = {maxN}')

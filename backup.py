@@ -334,6 +334,10 @@ print(l1)
 
 # 11 = pattern
 
+# 12 = calculator
+
+# 13 = LCM And HCF
+
 
 
 
@@ -1907,6 +1911,7 @@ while i<n:
 
 
 
+
 # design  1 =
 # *
 # **
@@ -1986,7 +1991,7 @@ while i<=n:
 # **
 # *
 
-n=int(input("Enter row"))
+n=int(input("Enter row = "))
 i=1
 while i<=n:
     print(' '*(n-i)+'*'*i)
@@ -1996,3 +2001,114 @@ i=n
 while i>=1:
     print('*'*i)
     i=i-1
+
+# design 5
+#      *
+#     * *
+#    * * *
+#   * * * *
+#  * * * * *
+#   * * * *
+#    * * *
+#     * *
+#      *
+n=int(input("Enter row = "))
+i=1
+while i<=n:
+    print(' '*(n-i)+' *'*i)
+    i=i+1
+i=1
+while i<n:
+    print(' '*i+' *'*(n-i))
+    i=i+1
+
+
+
+
+# calculator =======================================================
+
+while True:
+    print("1 for add \n 2 for sub \n 3 for multiply \n 4 for division \n 5 for OFF")
+    n=int(input("Enter Your Choice"))
+    if n==1:
+        x=int(input("Enter First Number"))
+        y=int(input("Enter Second Number"))
+        z=x+y
+        print(f'addition of {x} and {y} is {z}')
+
+    elif n==2:
+         x=int(input("Enter First Number"))
+         y=int(input("Enter Second Number"))
+         z=x-y
+         print(f'sub of {x} and {y} is {z}')
+
+    
+    elif n==3:
+         x=int(input("Enter First Number"))
+         y=int(input("Enter Second Number"))
+         z=x*y
+         print(f'multiply of {x} and {y} is {z}')
+
+    
+    elif n==4:
+         x=int(input("Enter First Number"))
+         y=int(input("Enter Second Number"))
+         z=x-y
+         print(f'div of {x} and {y} is {z}')
+
+    elif n==5:
+        break
+
+    else:
+        print("Enter Valid Number")
+
+
+    
+                
+                                # or modified version of claculator
+
+
+
+while True:
+    print("1 for add \n 2 for sub \n 3 for multiply \n 4 for division \n 5 for OFF")
+    n=int(input("Enter Your Choice = "))
+    p=(1,2,3,4)
+    if n in p:
+        x=int(input("Enter First Number"))
+        y=int(input("Enter Second Number"))
+
+        if n==1:
+            z=x+y
+            print(f'addition of {x} and {y} is {z}')
+
+        elif n==2:
+            z=x-y
+            print(f'sub of {x} and {y} is {z}')
+
+        elif n==3:
+             z=x*y
+             print(f'multiply of {x} and {y} is {z}')
+
+        elif n==4:
+             z=x-y
+             print(f'div of {x} and {y} is {z}')
+
+        elif n==5:
+             break
+
+        else:
+             print("Enter Valid Number")
+
+
+
+#  LCM 
+x=int(input("Enter First Number = "))
+y=int(input("Enter Second Number = "))
+maxN=max(x,y)
+
+while True:
+    if maxN%x==0 and maxN%y==0:
+        break
+    maxN=maxN+1
+print(f'LCM of {x} and {y} is = {maxN}')
+
