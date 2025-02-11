@@ -340,6 +340,30 @@ print(l1)
 
 
 
+# 14 = Function 
+
+
+# function is a block of reusable code 
+# syntax = 
+
+# *=required    , o=optional
+
+
+# *def *function-name(parameter):    (parameter is optional)
+#     'doc-string'   = optional
+#     body of function     = cant leave it empty
+#     return               = optional
+
+# var *function-name(argument)                =  call a function
+# argument is optional
+
+# relation between parameter and argument=
+# 1 = positional argument
+# 2 = key-word argument
+
+
+
+
 
 
 
@@ -458,7 +482,7 @@ x = string.punctuation
 print(x)
 print(len(x))
 
-# identifiers is a name that can be used to indentify the object. examply= (variable,module,packages,libraray)
+# identifiers is a name that can be used to indentify the object. example = (variable,module,packages,libraray)
 # identifiers does not have datatype but its value has:
 
 x=12
@@ -2112,3 +2136,82 @@ while True:
     maxN=maxN+1
 print(f'LCM of {x} and {y} is = {maxN}')
 
+# HCF
+x=int(input("Enter First Number = "))
+y=int(input("Enter Second Number = "))
+minN=min(x,y)
+
+while True:
+    if x%minN==0 and y%minN==0:
+        break
+    minN=minN-1
+print(f'HCF of {x} and {y} is = {minN}')
+
+
+
+
+# Function
+
+#  1 = postional argument = if we pass 2 parameter then we have to give 2 arguments also 
+def sum(x,y):
+    return x+y
+z= sum (2,4)
+print(z)
+ans 6
+
+
+
+def sum(x,y):
+    return x+y
+z= sum (2)
+print(z)
+error = missing one argument
+
+
+# 2 = keyward argument
+
+def sum(x,y):
+    return x+y
+z= sum (y=5,x=5)
+print(z)
+ans 10 
+
+#     or 
+# we can ask at run time also
+
+def sum(x,y):
+    print("value of x = ",x)
+    print("value of y = ",y)
+    return x+y
+p=int(input("Enter value 1 = "))
+q=int(input("Enter value 2 = "))
+
+z= sum (y=p,x=q)
+print(z)
+
+ans
+Enter value 1 = 4
+Enter value 2 = 4
+value of x =  4
+value of y =  4
+8
+
+
+# use of doc string
+def sum(x,y):
+    'Use for sum'
+    print("value of x = ",x)
+    print("value of y = ",y)
+    return x+y
+p=int(input("Enter value 1 = "))
+q=int(input("Enter value 2 = "))
+
+z= sum (y=p,x=q)
+print(z)
+print(sum.__doc__)
+
+#  ans = Use for sum
+
+# print(dir(sum))  === use to see magic method for sum function
+# methods =
+# ['__annotations__', '__builtins__', '__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__globals__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__kwdefaults__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__type_params__']

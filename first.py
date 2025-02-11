@@ -1,9 +1,12 @@
-x=int(input("Enter First Number = "))
-y=int(input("Enter Second Number = "))
-maxN=max(x,y)
+def sum(x,y):
+    'Use for sum'
+    print("value of x = ",x)
+    print("value of y = ",y)
+    return x+y
+p=int(input("Enter value 1 = "))
+q=int(input("Enter value 2 = "))
 
-while True:
-    if maxN%x==0 and maxN%y==0:
-        break
-    maxN=maxN+1
-print(f'LCM of {x} and {y} is = {maxN}')
+z= sum (y=p,x=q)
+print(z)
+print(sum.__doc__)
+print(dir(sum))
