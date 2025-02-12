@@ -361,6 +361,8 @@ print(l1)
 # 1 = positional argument
 # 2 = key-word argument
 # 3 = default argument
+# 4 = variable length argument   or   (* args)
+# (* args) =  use to pass tuple as a argument
 
 
 
@@ -2219,5 +2221,75 @@ print(sum.__doc__)
 
 
 
-# 3 = default argument 
+# 3 = default argument =  we can asign values in parameter if didn't want to pass as an argument
 
+def added (x=0,y=0,z=0):
+    p=x+y+z
+    return p
+x=added()
+print(x)
+
+
+# or 
+
+def added (x=0,y=0,z=0):
+    print('x=',x)
+    print('y=',y)
+    print('z=',z)
+    return x+y+z
+x=added(5)
+print(x)
+# x= 5
+# y= 0
+# z= 0
+# 5
+
+#   or 
+def added (x=0,y=0,z=0):
+    print('x=',x)
+    print('y=',y)
+    print('z=',z)
+    return x+y+z
+x=added(5,6,7)
+print(x)
+# x= 5
+# y= 6
+# z= 7
+# 18
+
+
+# 4 = variable length argument
+
+def add(*n):
+    print(n)
+    print(type(n))
+    sum=0
+    for i in n:
+        sum=sum+i
+    return sum
+   
+
+x=add(1,2,3,4,5,6)
+print(x)
+
+# (1, 2, 3, 4, 5, 6)
+# <class 'tuple'>
+# 21
+
+# value taken at run time
+def add(*n):
+    print(n)
+    print(type(n))
+    sum=0
+    for i in n:
+        for x in i:
+            sum=sum+x
+    return sum
+
+p=eval(input("Enter Any Tuple = "))
+x=add(p)
+print(x)
+# ans
+# ((1, 2, 3, 4, 5),)
+# <class 'tuple'>
+# 15
