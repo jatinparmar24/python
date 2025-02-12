@@ -44,8 +44,8 @@
 # and these types are called data types
 
 # 5A=numeric ===
-# a=integer==>2,4,5,7,etc
-# b=float==3.4,1.2,5.4,etc
+# a=integer== 2,4,5,7,etc
+# b=float== 3.4,1.2,5.4,etc
 # c=complex== x+yj             x is real number  and y is imaginary number
 
 # 5B =string  ==    collection of characters     
@@ -97,7 +97,7 @@ l2=[1,2,3,'jat']
 print(id(l1))
 print(id(l2))
 
-# dist
+# dict
 d1={'name':'jatin','age':23}
 d2={'name':'jatin','age':23}
 print(id(d1))
@@ -360,6 +360,7 @@ print(l1)
 # relation between parameter and argument=
 # 1 = positional argument
 # 2 = key-word argument
+# 3 = default argument
 
 
 
@@ -2157,7 +2158,7 @@ def sum(x,y):
     return x+y
 z= sum (2,4)
 print(z)
-ans 6
+# ans 6
 
 
 
@@ -2215,3 +2216,8 @@ print(sum.__doc__)
 # print(dir(sum))  === use to see magic method for sum function
 # methods =
 # ['__annotations__', '__builtins__', '__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__globals__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__kwdefaults__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__type_params__']
+
+
+
+# 3 = default argument 
+
