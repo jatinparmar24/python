@@ -51,7 +51,7 @@
 # 5B =string  ==    collection of characters     
 # represented by==
 # ''=single quote     ====     used for single line string   
-#    ""=double quote   ====    used for single line string
+#    ""=double quote   ====    used for single line string  (prefer single quote because it take less memory then double quote)
 #   '''=triple quote   ==== used for multiline string
 
 # 5C = boolean  == True or False
@@ -625,7 +625,7 @@ print(x is y)
 x=[10]
 y=[10]
 print(x is y)
-# False  beacuse of diffrent memory storage  \\ example at 198-201
+# False  beacuse of diffrent memory storage  
 
 x=10
 y=10
@@ -778,14 +778,14 @@ print(type(x))
 x={12,23,4,56,12}
 print(x)  
 print(type(x))
-# ans   {56, 12, 4, 23}
+# ans   {56, 12, 4, 23}      // order is always different
 #  ans    <class 'set'>
 
 # frozenset
 x=frozenset({12,23,4,56,12})
 print(x)  
 print(type(x))
-# frozenset({56, 12, 4, 23})
+# frozenset({56, 12, 4, 23})     // order is always different
 # ans <class 'frozenset'>
 
 
@@ -986,7 +986,7 @@ print(str1.split('o',1))
 la=['shir','jatin','parmar']
 
 print(','.join(la))
-# shir,jatin,parmar          ',' is yhe point from where u want to join
+# shir,jatin,parmar          ',' is the point from where u want to join
 
 print(''.join(la))
 # shirjatinparmar

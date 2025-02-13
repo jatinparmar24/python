@@ -1,12 +1,4 @@
-def add(*n):
-    print(n)
-    print(type(n))
-    # sum=0
-    # for i in n:
-    #     for x in i:
-    #         sum=sum+x
-    #     return sum
-
-p=eval(input("Enter Any Tuple = "))
-x=add(p)
-print(x)
+l1=(22,23,2,5,3)
+l2=l1.copy()
+print(l1,l2)
+print(id(l1),id(l2))
