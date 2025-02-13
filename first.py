@@ -1,4 +1,9 @@
-l1=(22,23,2,5,3)
-l2=l1.copy()
-print(l1,l2)
-print(id(l1),id(l2))
+def showdetail(**n):
+    l=[]
+    for v in n.values():
+        l.append(v)
+    return l
+
+    
+x=eval(input("Enter Key Value = "))
+showdetail(**x)

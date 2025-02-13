@@ -2192,12 +2192,12 @@ q=int(input("Enter value 2 = "))
 z= sum (y=p,x=q)
 print(z)
 
-ans
-Enter value 1 = 4
-Enter value 2 = 4
-value of x =  4
-value of y =  4
-8
+# ans
+# Enter value 1 = 4
+# Enter value 2 = 4
+# value of x =  4
+# value of y =  4
+# 8
 
 
 # use of doc string
@@ -2259,6 +2259,9 @@ print(x)
 
 
 # 4 = variable length argument
+# we can't pass integer with *
+# gives tuple
+
 
 def add(*n):
     print(n)
@@ -2293,3 +2296,68 @@ print(x)
 # ((1, 2, 3, 4, 5),)
 # <class 'tuple'>
 # 15
+
+#              to remove nested loop we use * where we call function and provide answer in single tuple (1,2,3)
+
+def add(*n):
+    print(n)
+    print(type(n))
+    sum=0
+    for i in n:
+        sum=sum+i
+    return sum
+
+x=eval(input("Enter Tuple="))
+res=add(*x)
+print(res)
+# ans 
+# (1, 2, 3, 4, 5)
+# <class 'tuple'>
+# 15
+
+
+
+# 4 default key-ward argument===  **kwarge
+# gives dict
+
+def showdetail(**n):
+    print(n)
+    print(type(n))
+showdetail(name='jatin',age=24,city='Sehore')
+# 
+# {'name': 'jatin', 'age': 24, 'city': 'Sehore'}
+# <class 'dict'>
+
+# looping in dict for every details
+def showdetail(**n):
+    print(n)
+    print(type(n))
+    for k,v in n.items():
+        print(f'My {k} is {v}')
+
+showdetail(name='jatin',age=24,city='Sehore')
+# ans 
+# {'name': 'jatin', 'age': 24, 'city': 'Sehore'}
+# <class 'dict'>
+# My name is jatin
+# My age is 24
+# My city is Sehore
+
+
+# used double star ** at parameter and at argument
+
+def showdetail(**n):
+    print(n)
+    print(type(n))
+    for k,v in n.items():
+        print(f'My {k} is {v}')
+
+x=eval(input("Enter Key Value = "))
+showdetail(**x)
+
+# 
+# Enter Key Value = {'name':'jatin','age':24}
+# {'name': 'jatin', 'age': 24}
+# <class 'dict'>
+# My name is jatin
+# My age is 24
