@@ -1483,7 +1483,7 @@ print(y.issuperset(x))
 
 
 
-# condiational statement =============================================
+# conditional statement =============================================
 
 # 1 = conditional statement
 # a if
@@ -2361,3 +2361,16 @@ showdetail(**x)
 # <class 'dict'>
 # My name is jatin
 # My age is 24
+
+
+# print with methods
+def showdetail(**n):
+    l=[]
+    for v in n.value():
+        l.append(v)
+    return l
+
+    
+x=eval(input("Enter Key Value = "))
+res=showdetail(**x)
+print(res)

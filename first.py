@@ -1,9 +1,11 @@
 def showdetail(**n):
     l=[]
-    for v in n.values():
+    for v in n.value():
         l.append(v)
     return l
 
     
 x=eval(input("Enter Key Value = "))
-showdetail(**x)
+res=showdetail(**x)
+print(res)
+
