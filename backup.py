@@ -365,6 +365,23 @@ print(l1)
 # (* args) =  use to pass tuple as a argument
 
 
+# 15 = scope of varaible = 
+
+# 1a = local variable   = access only in its block 
+# 1b = global variable   = access throghout the code 
+# imp = to make local variable into global variable = global (keyward)
+# imp = to access global variable into local scope with the same name of declaration present =  globals()    (keyward)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2374,3 +2391,95 @@ def showdetail(**n):
 x=eval(input("Enter Key Value = "))
 res=showdetail(**x)
 print(res)
+# provide only values    == 
+
+
+
+#  scope of variable
+
+
+x=10
+def new():
+    y=20
+    print(y)
+    print(x)
+new()
+print(x)
+print(y)
+# ans 
+# 20
+# 10
+# 10
+# error
+
+
+# declare y as global to access throughout the code 
+
+x=10
+def new():
+    global y
+    y=20
+    print(y)
+    print(x)
+new()
+print(x)
+print(y)
+# ans 
+# 20
+# 10
+# 10
+# 20
+
+
+# make the local value global and access throgout the code
+x=10
+def new():
+    global x
+    print(x)
+    x=20
+    print(x)
+new()
+print(x)
+# ans 
+# 10
+# 20
+# 20
+
+
+# access global variable in local scope = using globals method
+x=10
+def new():
+    x=20
+    print("Enter global variable = ",globals()['x'])
+    print("Enter local variable = ",x)
+
+new()
+print(x)
+# ans
+# Enter global variable =  10
+# Enter local variable =  20
+# 10
+
+
+
+# y as global with global x in local scope  
+
+x=10
+def new():
+    global y
+    x=20
+    y=30
+    print("Enter global variable = ",globals()['x'])
+    print("Enter local variable = ",x)
+    print("Enter local variable = ",y)
+
+
+new()
+print(x)
+print(y)
+# ans
+# Enter global variable =  10
+# Enter local variable =  20
+# Enter local variable =  30
+# 10
+# 30

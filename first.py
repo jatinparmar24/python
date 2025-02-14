@@ -1,11 +1,13 @@
-def showdetail(**n):
-    l=[]
-    for v in n.value():
-        l.append(v)
-    return l
+x=10
+def new():
+    global y
+    x=20
+    y=30
+    print("Enter global variable = ",globals()['x'])
+    print("Enter local variable = ",x)
+    print("Enter local variable = ",y)
 
-    
-x=eval(input("Enter Key Value = "))
-res=showdetail(**x)
-print(res)
 
+new()
+print(x)
+print(y)
