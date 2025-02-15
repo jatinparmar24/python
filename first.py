@@ -1,13 +1,11 @@
-x=10
-def new():
-    global y
-    x=20
-    y=30
-    print("Enter global variable = ",globals()['x'])
-    print("Enter local variable = ",x)
-    print("Enter local variable = ",y)
 
+n=input("Str1 = ")
+y=input("str2 = ")
 
-new()
-print(x)
-print(y)
+x=n[::-1]
+if x==n:
+    print("Anagram")
+
+else:
+    print("Not")
+

@@ -1848,7 +1848,7 @@ while i<=n:
         pass     
     print(i)
     i=i+1
-# print 1 tp n number except 6
+# print 1 to n number except 6
 	
 
 
@@ -2483,3 +2483,77 @@ print(y)
 # Enter local variable =  30
 # 10
 # 30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Q - 1 Harshad Number
+
+n=int(input("Enter Any Number"))
+x=n
+sum=0
+while n>0:
+    ld=n%10
+    sum=sum+ld
+    n=n//10
+
+if x%sum==0:
+    print("Harshad Number")
+
+else:
+    print("Not A Harshad")
+
+
+
+# Q - 5  Spy Number
+
+n=int(input("Enter Any Number"))
+prod=1
+sum=0
+while n>0:
+    ld=n%10
+    sum=sum+ld
+    prod=prod*ld
+    n=n//10
+
+if prod==sum:
+    print("Spy Number")
+
+else:
+    print("Not A Spy")
+
+
+
+
+
+
