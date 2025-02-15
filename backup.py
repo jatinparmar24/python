@@ -622,22 +622,22 @@ print(not(x<y or y>z))
 #  membership operators
 str1='jatin'
 print('a' in str1)
-# true
+# True
 
 print('a' not in str1)
-# false
+# False
 
 # identity operators
 
 x=10
 y=20
 print(x is y)
-# False
+# False      because both have diffrent memory address
 
 x=10
 y=10
 print(x is y)
-# True
+# True     bacause both have same memory address
 
 x=[10]
 y=[10]
@@ -745,7 +745,7 @@ print(type(x))
 # ans = str
 
 x="jatin'parmar'"
-print((x))
+print(type(x))
 # jatin'parmar'
 
 x='''n'''
@@ -941,11 +941,11 @@ str1 = "python"
 print(max(str1))
 # ans y             finds the highest aschi value of letter 
 
-str1 = "pyhton"
+str1 = "python"
 print(min(str1))
 # ans h
 
-str1 = "pyhton"
+str1 = "python"
 print(len(str1))
 # ans 6
 
