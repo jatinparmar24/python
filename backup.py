@@ -2491,32 +2491,6 @@ print(y)
 
 
 
-#  Advance Python
-
-# collection always need to have data type
-1 = Higher Order Function
-
-#   1a = map() = number pf input = number of output
-#       syntax = map(function_name , collection)                          // collection=iterables, string , list , tuple , set , dict
-
-#     another syntax = map(function_name , iterable1,iterable2)
-
-
-
-
-
-
-
-# 1a map()
-
-def sqau(x):
-    return x**2
-    
-l1=eval(input("Enter Any Numeric Collection = "))
-
-res=map(sqau,l1)
-print(res)
-print(list(res))
 
 
 
@@ -2579,3 +2553,133 @@ else:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  Advance Python
+# Topics
+
+
+
+# 1 = Higher Order Function
+# 1a = map()
+# number of input is always equal to number of output
+
+# 1b = filter()
+# number of input is >= number of output
+
+# 1c = reduce
+# number of output is always = 1
+
+# 2 = lambda function
+
+# 3 = Decorators
+
+# 4 = Generators
+
+# 5 = file handeling
+
+# 6 = oops
+
+
+
+
+
+
+
+
+# collection always need to have data type
+1 = Higher Order Function
+
+#   1a = map() = number pf input = number of output
+#       syntax = map(function_name , collection)                          // collection=iterables, string , list , tuple , set , dict
+# collection always need to have data type
+#     another syntax = map(function_name , iterable1,iterable2)
+
+# 1a map()
+
+# question 
+# square of every element
+def sqau(x):
+    return x**2
+    
+l1=eval(input("Enter Any Numeric Collection = "))
+
+res=map(sqau,l1)
+print(res)
+print(list(res))
+
+
+
+# question = add +1 in odd number   ,  add +2 in even number
+def add(x):
+    if (x%2==0):
+        return x+2
+
+    else:
+        return x+1
+
+n=eval(input("Enter Series"))
+res=map(add,n)
+print(list(res))
+
+# question 
+# power is taken from second list
+def powerr(x,y):
+    return x**y
+
+x=eval(input("Enter First string = "))
+y=eval(input("Enter Second string = "))
+
+res=map(powerr,x,y)
+print(list(res))
+
+
+# question  take 3 list and add them
+def sum(x,y,z):
+    return x+y+z
+
+l1=[2,3,4]
+l2=[3,4,5]
+l3=[4,5,6]
+
+res=map(sum,l1,l2,l3)
+print(list(res))
