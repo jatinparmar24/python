@@ -392,6 +392,7 @@ print(l1)
 
 
 
+
 # range(start,stop,step)          step(from where u have to go)   
 # it return collection
 
@@ -1508,11 +1509,11 @@ x=10
 y=20
 
 if x<y:
-    print("not")
+    print("smaller")
 
 print("hello..........")
 
-# not
+# smaller
 # hello..........
 # if condition is true then it provide ans
 
@@ -1719,6 +1720,7 @@ while n>0:
     n=n//10
 print(sum)
 print(n)
+
 # sum=
 # n=0
 
@@ -2116,7 +2118,7 @@ while True:
 while True:
     print("1 for add \n 2 for sub \n 3 for multiply \n 4 for division \n 5 for OFF")
     n=int(input("Enter Your Choice = "))
-    p=(1,2,3,4)
+    p=(1,2,3,4,5)
     if n in p:
         x=int(input("Enter First Number"))
         y=int(input("Enter Second Number"))
@@ -2489,11 +2491,32 @@ print(y)
 
 
 
+#  Advance Python
+
+# collection always need to have data type
+1 = Higher Order Function
+
+#   1a = map() = number pf input = number of output
+#       syntax = map(function_name , collection)                          // collection=iterables, string , list , tuple , set , dict
+
+#     another syntax = map(function_name , iterable1,iterable2)
 
 
 
 
 
+
+
+# 1a map()
+
+def sqau(x):
+    return x**2
+    
+l1=eval(input("Enter Any Numeric Collection = "))
+
+res=map(sqau,l1)
+print(res)
+print(list(res))
 
 
 
@@ -2532,7 +2555,6 @@ if x%sum==0:
 
 else:
     print("Not A Harshad")
-
 
 
 # Q - 5  Spy Number
