@@ -1,9 +1,15 @@
-def sum(x,y,z):
-    return x+y+z
+str2=input("Enter = ")
+capital=0
+small=0
+num=0
 
-l1=[2,3,4]
-l2=[3,4,5]
-l3=[4,5,6]
+for x in str2:
+    if x>=chr(65) and x<=chr(90):
+        capital=capital+1
 
-res=map(sum,l1,l2,l3)
-print(list(res))
+    elif x>=chr(97) and x<=chr(122):
+        small=small+1
+
+    elif int(x)>=0 and int(x)<=9:
+        num=num+1
+print("num = ",num , "small = ",small , "capital = ",capital)
