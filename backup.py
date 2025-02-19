@@ -2673,6 +2673,8 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # collection always need to have data type
 #     another syntax = map(function_name , iterable1,iterable2)
 
+# we can send multiple collecttions only in map method             //  imp
+
 # 1a map()
 
 # question 
@@ -2721,4 +2723,60 @@ l2=[3,4,5]
 l3=[4,5,6]
 
 res=map(sum,l1,l2,l3)
+print(list(res))
+
+# question print ['odd','even','odd','even']
+def even(x):
+    if x%2==0:
+        return 'even'
+
+    else :
+        return 'odd'
+
+li=[1,2,3,4,5,6,7,8,9,10]
+res=map(even,li)
+print(list(res))
+
+
+
+
+
+# 1b = filter()
+# number of input is >= number of output
+
+# question  = even number
+def even(x):
+    if x%2==0:
+        return x
+
+li=[1,2,3,4,5,6,7,8,9,10]
+res=filter(even,li)
+print(list(res))
+
+# question = odd number
+if x%2!=0
+
+# question = positive
+if x>=0
+
+# question  = negative 
+if x<0
+
+
+# question = find name with less character then 3
+def finds(x):
+    if len(x)<=3:
+        return x
+
+li=['jatin','raj','jai','amit']
+res=filter(finds,li)
+print(list(res))
+
+#      run time input
+def finds(x):
+    if len(x)<=3:
+        return x
+
+li=eval(input("Enter Your Name = "))
+res=filter(finds,li)
 print(list(res))
