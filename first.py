@@ -1,7 +1,13 @@
-def finds(x):
-    if len(x)<=3:
+import functools
+
+l1=['jatin','raj','abhishek','ajay','vikas']
+
+def sum(x,y):
+    if len(x)>len(y):
         return x
 
-li=eval(input("Enter Your Name = "))
-res=filter(finds,li)
-print(list(res))
+    else:
+        return y
+    
+res=functools.reduce(sum,l1)
+print(res)

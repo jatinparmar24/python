@@ -2641,12 +2641,25 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # 1 = Higher Order Function
 # 1a = map()
 # number of input is always equal to number of output
+# we can use them directly
 
 # 1b = filter()
 # number of input is >= number of output
+# we can use them directly
 
-# 1c = reduce
+
+# 1c = reduce 
+# datatype not neccesary to find in print
+
 # number of output is always = 1
+# method to use reduce
+
+# 1 = have to import functools        (a module)
+# syntax = functools.reduce(func_name,collection)
+
+# 2 = from functools import reduce
+# syntax  = reduce(func_name,collection)
+
 
 # 2 = lambda function
 
@@ -2780,3 +2793,74 @@ def finds(x):
 li=eval(input("Enter Your Name = "))
 res=filter(finds,li)
 print(list(res))
+
+
+# 1c = reduce 
+# number of output = 1
+
+# question = maximum number
+# have to give 2 parameters to compare with second one
+
+
+
+
+import functools
+
+l1=[2,4,6,10,15,3]
+
+def mymax(x,y):
+    if x>y:
+        return x
+
+    else :
+        return y
+
+res=functools.reduce(mymax,l1)
+print(res)
+
+
+# question = minimum number
+
+import functools
+
+l1=[2,4,6,10,15,3]
+
+def mymin(x,y):
+    if x<y:
+        return x
+
+    else :
+        return y
+
+res=functools.reduce(mymin,l1)
+print(res)
+
+
+# question = sum
+
+import functools
+
+l1=[2,4,6,10,15,3]
+
+def sum(x,y):
+    return x+y
+
+    
+res=functools.reduce(sum,l1)
+print(res)
+
+# question = lenth of name = biggest
+
+import functools
+
+l1=['jatin','raj','abhishek','ajay','vikas']
+
+def sum(x,y):
+    if len(x)>len(y):
+        return x
+
+    else:
+        return y
+    
+res=functools.reduce(sum,l1)
+print(res)
