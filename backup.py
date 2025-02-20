@@ -425,6 +425,10 @@ x=range(1,n+1,2)
 print(list(x))
 
 
+x= list(range(50,101))
+print(x)
+
+
 
 
 # imp =========
@@ -2661,7 +2665,11 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # syntax  = reduce(func_name,collection)
 
 
-# 2 = lambda function
+# 2 = lambda function   = 
+# a function that does not have a name   /   anonymos function
+# function define with lambda keyword instead of def keyword
+# it takes n number of arguments and execute only single line of expression
+# syntax   lambda argument:expression
 
 # 3 = Decorators
 
@@ -2864,3 +2872,51 @@ def sum(x,y):
     
 res=functools.reduce(sum,l1)
 print(res)
+
+
+
+
+
+2 = lambda function
+
+# question  = add
+add=lambda x,y:x+y
+p=int(input("Enter 1st Number = "))
+q=int(input("Enter 2nd Number = "))
+print(add(p,q))
+
+# or we can print it with expression also
+
+add=lambda x,y:print(x+y)
+p=int(input("Enter 1st Number = "))
+q=int(input("Enter 2nd Number = "))
+add(p,q)
+
+
+# question = we can use if else 
+n=int(input("Enter Number = "))
+checkN=lambda x:'even number' if x%2==0 else 'odd number'
+print(checkN(n))
+
+
+
+# question = nested if         ('positive' if x>=0) if's portion      else portion ('nagetive' if x<0 else 'zero')    
+n=int(input("Enter Number = "))
+checkN=lambda x:'positive' if x>=0 else 'nagetive' if x<0 else 'zero'
+print(checkN(n))
+
+
+# question with for loop
+x= lambda p :[i for i in range(p)]
+p=int(input("Enter Number = "))
+print(x(p))
+
+
+# question nested for loop =  p for the collection and q for the repeated time
+x=lambda p,q:[r for r in range(p) for i in range(q)]
+p=int(input("Enter Number of Collection required = "))
+q=int(input("Enter Number of times to repeat collection = "))
+print(x(p,q))
+# let p = 3
+# let q = 2
+# ans = [0, 0, 1, 1, 2, 2]
