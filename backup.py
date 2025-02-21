@@ -2670,6 +2670,8 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # function define with lambda keyword instead of def keyword
 # it takes n number of arguments and execute only single line of expression
 # syntax   lambda argument:expression
+# we can only use list comprehension []
+# we can't use while loop with lambda beacuse it support one line expression and while loop need two line of expression like 1 is condition and 2nd is increament
 
 # 3 = Decorators
 
@@ -2913,10 +2915,26 @@ print(x(p))
 
 
 # question nested for loop =  p for the collection and q for the repeated time
-x=lambda p,q:[r for r in range(p) for i in range(q)]
+x=lambda p,q:[[r for r in range(p)]for i in range(q)]
 p=int(input("Enter Number of Collection required = "))
 q=int(input("Enter Number of times to repeat collection = "))
 print(x(p,q))
-# let p = 3
-# let q = 2
-# ans = [0, 0, 1, 1, 2, 2]
+# let p = 4
+# let q = 5
+# ans = [[0, 1, 2, 3], [0, 1, 2, 3], [0, 1, 2, 3], [0, 1, 2, 3], [0, 1, 2, 3]]
+
+
+# question = lambda with map
+l1=[1,2,3,4,5,6,7,8]
+res=list(map(lambda x:x**2 , l1))
+print(res)
+# ans = [1, 4, 9, 16, 25, 36, 49, 64]
+
+
+# question = lambda with map at run time
+
+n=eval(input("Enter Series"))
+res=list(map(lambda x:x**2 , n))
+print(res)
+# Enter Series[2,3,4,5]
+# [4, 9, 16, 25]
