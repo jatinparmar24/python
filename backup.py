@@ -2938,3 +2938,59 @@ res=list(map(lambda x:x**2 , n))
 print(res)
 # Enter Series[2,3,4,5]
 # [4, 9, 16, 25]
+
+
+# adding to list with lambda
+l1=[2,3,4,5,6]
+l2=[3,4,5,6,7]
+res=list(map(lambda x,y:x+y , l1,l2))
+print(res)
+# ans = [5, 7, 9, 11, 13]
+
+# all letter in capital 
+str1=['jatin','raj','jai']
+res=list(map(lambda x: x.upper(),str1))
+print(res)
+
+
+# filter with lambda 
+# question even 
+l1=[2,3,4,5,6]
+res=list(filter(lambda x:x%2==0 , l1))
+print(res)
+
+
+# lambda with reduce
+import functools
+
+l1=[1,2,3,4,5]
+res=functools.reduce(lambda x,y : x+y , l1)
+print(res)
+
+
+
+# question = 
+
+n=int(input("Enter Number = "))
+res=[[j for j in range(1,n)] for i in range(n)]
+print(res)
+# Enter Number = 5
+# [[1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4], [1, 2, 3, 4]]
+
+# question = 
+for i in range(0,5):
+    print("Hi")
+# Hi
+# Hi
+# Hi
+# Hi
+# Hi
+
+# question = with _ underscore
+for _ in range(0,5):
+    print("Hi")
+# Hi
+# Hi
+# Hi
+# Hi
+# Hi
