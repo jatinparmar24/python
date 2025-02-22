@@ -2673,9 +2673,12 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # we can only use list comprehension []
 # we can't use while loop with lambda beacuse it support one line expression and while loop need two line of expression like 1 is condition and 2nd is increament
 
-# 3 = Decorators
+# 3 =  Generators  = 
+#   generator is a special type of function that can be use to generate iterate object.
+# instead of return keyward we now use 'yield' keyward.
 
-# 4 = Generators
+
+# 4 =  Decorators  
 
 # 5 = file handeling
 
@@ -2994,3 +2997,28 @@ for _ in range(0,5):
 # Hi
 # Hi
 # Hi
+
+
+# 3 = generator
+
+def new():
+    yield 10
+
+x=new()
+# print(x.__next__())
+# or
+print(next(x))
+
+# question
+def even(n):
+    i=0
+    while i<=n:
+        if i%2==0:
+            yield i
+        i=i+1
+res=even(10)
+print(res)
+print(list(res))
+# ans 
+# <generator object even at 0x000002392CE46740>
+# [0, 2, 4, 6, 8, 10]
