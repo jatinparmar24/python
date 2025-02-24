@@ -1,12 +1,20 @@
 def outerfun(fun1):
-    def innerfun():
-        print("Before Modification")
-        fun1()
-        print("After Modification")
+    def innerfun(r,s,t):
+        r=r+10
+        s=s+10
+        t=t+10
+        a=fun1(r,s,t)
+        print(a)
+       
     return innerfun
 
-def fun():
-    print("This is from main Function")
+
+def fun(x,y,z):
+    return x+y+z
 
 res=outerfun(fun)
-res()
+x=10
+y=20
+z=30
+res(x,y,z)
+fun(x,y,z)

@@ -3041,7 +3041,8 @@ print(x,y,z)
 # ans = 0 ,2 , 4
 
 
-# 4 = decorator
+# 4 = decorator without @
+# normsl calling
 
 def outerfun(fun1):
     def innerfun():
@@ -3061,3 +3062,49 @@ res()
 # After Modification
 
 
+
+# decorator is used with @
+# easy calling
+
+def outerfun(fun1):
+    def innerfun():
+        print("Before Modification")
+        fun1()
+        print("After Modification")
+    return innerfun
+
+@outerfun
+def fun():
+    print("This is from main Function")
+
+fun()
+# ans 
+# Before Modification
+# This is from main Function
+# After Modification
+
+
+# question
+
+def outerfun(fun1):
+    def innerfun(r,s,t):
+        r=r+10
+        s=s+10
+        t=t+10
+        a=fun1(r,s,t)
+        print(a)
+       
+    return innerfun
+
+
+def fun(x,y,z):
+    return x+y+z
+
+res=outerfun(fun)
+x=int(input("Enter 1st Number = "))
+y=int(input("Enter 2nd Number = "))
+z=int(input("Enter 3rd Number = "))
+res(x,y,z)
+fun(x,y,z)
+
+# ans  =  90
