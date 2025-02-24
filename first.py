@@ -1,11 +1,12 @@
-def even(n):
-    i=0
-    while i<=n:
-        if i%2==0:
-            yield i
-        i=i+1
-res=even(10)
-x=next(res)
-y=next(res)
-z=next(res)
-print(x,y,z)
+def outerfun(fun1):
+    def innerfun():
+        print("Before Modification")
+        fun1()
+        print("After Modification")
+    return innerfun
+
+def fun():
+    print("This is from main Function")
+
+res=outerfun(fun)
+res()

@@ -2678,7 +2678,9 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # instead of return keyward we now use 'yield' keyward.
 
 
-# 4 =  Decorators  
+# 4 =  Decorators  = 
+# special type of higher order function that can take function as an arugumeht and it also return a function (where we change the behaviour)
+# change the internal working without changing it's code
 
 # 5 = file handeling
 
@@ -3022,3 +3024,40 @@ print(list(res))
 # ans 
 # <generator object even at 0x000002392CE46740>
 # [0, 2, 4, 6, 8, 10]
+
+
+# question
+def even(n):
+    i=0
+    while i<=n:
+        if i%2==0:
+            yield i
+        i=i+1
+res=even(10)
+x=next(res)
+y=next(res)
+z=next(res)
+print(x,y,z)
+# ans = 0 ,2 , 4
+
+
+# 4 = decorator
+
+def outerfun(fun1):
+    def innerfun():
+        print("Before Modification")
+        fun1()
+        print("After Modification")
+    return innerfun
+
+def fun():
+    print("This is from main Function")
+
+res=outerfun(fun)
+res()
+# ans 
+# Before Modification
+# This is from main Function
+# After Modification
+
+
