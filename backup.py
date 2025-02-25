@@ -2682,9 +2682,16 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # special type of higher order function that can take function as an arugumeht and it also return a function (where we change the behaviour)
 # change the internal working without changing it's code
 
-# 5 = file handeling
 
-# 6 = oops
+
+
+# 5 = module = 
+# a .py extension file that contains variable,functions,class , methods .
+
+
+# 6 = file handeling
+
+# 7 = oops
 
 
 
