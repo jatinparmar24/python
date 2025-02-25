@@ -2689,9 +2689,21 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # a .py extension file that contains variable,functions,class , methods .
 
 
-# 6 = file handeling
+# 6 = elliyasing =
+# to use small name instead of big original name . it represent by = as keyward
+# example = 
+# import calculator as c
+# print(c.variable)
+# now we can use calculator as c in anywhere of the code and after that we can't use calculator word 
 
-# 7 = oops
+# two types = 
+# over module and over function
+
+
+
+#  = file handeling
+
+#   = oops
 
 
 
