@@ -2694,16 +2694,55 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # example = 
 # import calculator as c
 # print(c.variable)
-# now we can use calculator as c in anywhere of the code and after that we can't use calculator word 
+# now we can use calculator as c in anywhere of the code and after that we can't use calculator word below elliyasing
 
 # two types = 
 # over module and over function
 
 
 
+
+#  7  = oops = 
+# to add real world entities to programming world
+
+# properties of oops = 
+abstraction = data-protection
+encapsulation = data-protection
+inheritence = reusability
+polymorphism = reusability
+
+
+
+# 7a = class = it is a dummy modele of design and it has no physical existance,it dosen't take memory until it is called;(blueprint of an object)
+#       it holds properties and action/behavior of object
+#       properties = variables.
+#       action/behavior = methods.
+# syntax = class ClassName and Classname should be in camelcase and first letter must be capital.
+# '''doc string'''  =  must written in triple quote.
+
+# syntax = 
+# class ClassName:
+#     '''doc string'''
+#     variables
+#     methods
+# obj=ClassName
+# print(obj.variables)
+# print(obj.method())
+
+
+
+
+# 7b = object = pyhsical existance of a class  or   instance of a class
+
+
+
+
+
+
+
 #  = file handeling
 
-#   = oops
+
 
 
 
@@ -3127,3 +3166,10 @@ res(x,y,z)
 fun(x,y,z)
 
 # ans  =  90
+
+
+
+
+
+
+# 7 = oops
