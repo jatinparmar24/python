@@ -1,20 +1,13 @@
-def outerfun(fun1):
-    def innerfun(r,s,t):
-        r=r+10
-        s=s+10
-        t=t+10
-        a=fun1(r,s,t)
-        print(a)
+class Student:
+    '''student details'''
+    def __init__(self,name,roll,marks):
+        self.x=name
+        self.y=roll
+        self.z=marks
        
-    return innerfun
 
+obj=Student("jatin",24,95)
+print(obj.x)
+print(obj.y)
+print(obj.z)
 
-def fun(x,y,z):
-    return x+y+z
-
-res=outerfun(fun)
-x=10
-y=20
-z=30
-res(x,y,z)
-fun(x,y,z)

@@ -2715,8 +2715,10 @@ polymorphism = reusability
 
 # 7a = class = it is a dummy modele of design and it has no physical existance,it dosen't take memory until it is called;(blueprint of an object)
 #       it holds properties and action/behavior of object
-#       properties = variables.
-#       action/behavior = methods.
+#       properties = variables     =  (static/class variable , instance variable , local variable)
+#       action/behavior = methods  =  (constructor(special type of method) , instance method , static method , class method )
+# instance = first parameter should be self
+
 # syntax = class ClassName and Classname should be in camelcase and first letter must be capital.
 # '''doc string'''  =  must written in triple quote.
 
@@ -2732,7 +2734,11 @@ polymorphism = reusability
 
 
 
-# 7b = object = pyhsical existance of a class  or   instance of a class
+# 7b = object = pyhsical existance of a class  or   instance of a class.
+
+# 7c = constructor = constructor is a special type of method that called automatically when object created.
+
+# 7d = self = self is a refrence variable that holds address of current object of current class.
 
 
 
@@ -3173,3 +3179,113 @@ fun(x,y,z)
 
 
 # 7 = oops
+
+# to hit doc string
+
+class Student:
+    '''student details'''
+    name='jatin parmar'
+    city='sehore'
+
+# print(dir(Student))   it gives all magic method
+print(Student.__doc__)
+
+# ans = student details 
+
+class Student:
+    '''student details'''
+    name='jatin parmar'
+    city='sehore'
+
+print(dir(Student))
+
+# ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__firstlineno__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__static_attributes__', '__str__', '__subclasshook__', '__weakref__', 'city', 'name']
+
+
+# question
+
+class Student:
+    '''student details'''
+    name='jatin parmar'
+    city='sehore'
+
+
+print(Student)
+obj=Student
+print(obj)
+
+# ans    =  these are object of python 
+
+# <class '__main__.Student'>
+# <class '__main__.Student'>
+
+
+# call with  constructor
+# object of class 
+
+class Student:
+    '''student details'''
+    name='jatin parmar'
+    city='sehore'
+
+
+x=Student()   //  parentheises is neccesary to call the object of class
+print(x)
+
+# ans = 
+# <__main__.student object at 0x000002BCFD3E6F90>
+
+
+
+# constructor calling
+
+class Student:
+    '''student details'''
+    def __init__(self):
+        print("constructor called")
+
+# obj=Student  =  not give any thing
+obj=Student()
+
+# constructor called
+
+
+
+
+# same address as self
+
+class Student:
+    '''student details'''
+    def __init__(self):
+        print("constructor called")
+        print("self :",id(self))
+
+# obj=Student
+obj=Student()
+print(id(obj))
+
+# 
+constructor called
+self : 2565191069584
+2565191069584
+
+
+
+# self has already been declared in obj =
+class Student:
+    '''student details'''
+    def __init__(self,name,roll,marks):
+        self.x=name
+        self.y=roll
+        self.z=marks
+       
+
+obj=Student("jatin",24,95)
+print(obj.x)
+print(obj.y)
+print(obj.z)
+
+# ans =
+jatin
+24
+95
