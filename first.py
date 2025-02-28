@@ -1,13 +1,20 @@
-class Student:
-    '''student details'''
+class School:
+    '''School Details'''
     def __init__(self,name,roll,marks):
-        self.x=name
-        self.y=roll
-        self.z=marks
+        self.a=name
+        self.b=roll
+        self.c=marks
+    
+    def addcity(self,city):
+        self.d=city
+
+    def show(self):
+        print(self.a,self.b,self.c,self.d)
+
+obj=School('jatin',101,90)
+obj.addcity('sehore')
+obj.show()
        
 
-obj=Student("jatin",24,95)
-print(obj.x)
-print(obj.y)
-print(obj.z)
+
 

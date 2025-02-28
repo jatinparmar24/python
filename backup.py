@@ -2740,9 +2740,14 @@ polymorphism = reusability
 
 # 7d = self = self is a refrence variable that holds address of current object of current class.
 
+#  7e = variable = 
+
+#  7e = 1  =  instance variable  =   a variable which is initialize with self and change its value when the value of object changes
+# where we can declare instance variable = inside class   example = (self.<variable name>),  outside class   example = (object.<variable name?)
+# where we can access instance variable   = inside class with the help of self  , outside class with the help of object
 
 
-
+# 7e = 2 = static variable  =  value dosn't change when value of object change
 
 
 
@@ -3239,6 +3244,8 @@ print(x)
 
 # constructor calling
 
+# __init__     =  in build  constructor 
+
 class Student:
     '''student details'''
     def __init__(self):
@@ -3289,3 +3296,53 @@ print(obj.z)
 jatin
 24
 95
+
+
+# multiple constructor  //  python does not support overloadind
+
+# it gives result of the last one 
+
+class Student:
+    '''student details'''
+    def __init__(self,name,roll,marks):
+        self.x=name
+        self.y=roll
+        self.z=marks
+
+    def __init__(self):
+        print("constructor called")
+       
+
+obj=Student()
+
+obj.__init__()  // we can call constructor 
+
+# constructor called
+
+
+# variables = 
+# 1 = instance variable = 
+
+
+class Student:
+    '''student details'''
+    def __init__(self,name,roll,marks):
+        self.x=name               //  instance varaible declare inside constructor
+        self.y=roll               //  instance varaible declare inside constructor
+        self.z=marks              //  instance varaible declare inside constructor
+
+    def add_new(self,city):
+        self.p=city                   //  instance varaible declare inside instance method
+
+    def show(self):
+        print(self.x,self.y,self.z,self.p,self.school_name)       //  instance varaible call inside instance method
+    
+       
+
+obj=Student('jatin',21,80)                  //  instance varaible declare outside of class
+obj.add_new('sehore')
+obj.school_name='SHSS'
+obj.show()
+print(obj.x,obj.y,obj.z,obj.p,obj.school_name)
+
+# 2 = static variable
