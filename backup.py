@@ -2748,6 +2748,22 @@ polymorphism = reusability
 
 
 # 7e = 2 = static variable  =  value dosn't change when value of object change
+# declare = 
+# inside class = 
+# outside class = 
+
+# callling = 
+# inside class = 
+# outside class = 
+
+# 7e = 3 = local variable = a variable declare inside any method then we can call it in only it's block of code 
+
+# 7f = methods = 
+# instance method = 
+# class method = 
+# static method = 
+
+
 
 
 
@@ -3345,4 +3361,88 @@ obj.school_name='SHSS'
 obj.show()
 print(obj.x,obj.y,obj.z,obj.p,obj.school_name)
 
-# 2 = static variable
+
+
+# 2 = static variable = a variable that doesn't change when object change = 
+
+
+class Student:
+    '''School Details'''
+    school="ASSF"            // declaration of static method
+
+    def __init__(self,name,roll):
+        self.a=name
+        self.b=roll
+        Student.scode=123                 // declaration of static method
+    
+    def new(self):
+        Student.city="Sehore"                 // declaration of static method
+        
+
+    def show(self):
+        print(Student.school,Student.scode,Student.city,Student.subject)
+
+Student.subject="PCM"                                    // declaration outside class
+obj=Student("Jatin",101)
+obj.new()
+obj.show()
+
+
+ # 3 = local variable =
+ class Student:
+    '''School Details'''
+    school="ASSF"
+
+    def __init__(self,name,roll):
+        self.a=name
+        self.b=roll
+        Student.scode=123
+    
+    def new(self):
+        Student.city="Sehore"
+        
+
+    def show(self):
+        print(Student.school,Student.scode,Student.city,Student.subject)
+
+Student.subject="PCM"
+obj=Student("Jatin",101)
+obj.new()
+obj.show()
+print(school)
+       
+# ans == error in print(school)
+
+
+
+
+# all three variable used here 
+
+class Mobile:
+    '''mobile name'''
+    another="oppo"     // static
+    def __init__(self,name,comp):
+        self.a=name        // instance                  
+        self.s=comp        // instance           
+        print(Mobile.another)
+
+    def addnew(self):
+        x=2                // local
+        print("value of x",x)
+
+    def show(self):
+        print(self.a,self.s,Mobile.another)
+
+obj=Mobile("apple","vivo")
+
+obj.addnew()
+obj.show()
+
+# ans =
+oppo
+value of x 2
+apple vivo oppo
+
+
+
+
