@@ -2638,6 +2638,7 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 
 
 #  Advance Python
+
 # Topics
 
 
@@ -2752,22 +2753,59 @@ polymorphism = reusability
 # inside class = 
 # outside class = 
 
-# callling = 
+# calling = 
 # inside class = 
 # outside class = 
 
 # 7e = 3 = local variable = a variable declare inside any method then we can call it in only it's block of code 
 
 # 7f = methods = 
-# instance method = 
-# class method = 
-# static method = 
+# instance method = directly related to its object
+# class method = @classmethod = use to modify the variable  and instead of self we now use cls.  =
+# related with class not with object . 
+
+# static method = @staticmethod = use to modify the variable  and instead of self we now use cls. = 
+
 
 
 
 
 
 #  = file handeling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3444,5 +3482,36 @@ value of x 2
 apple vivo oppo
 
 
+
+# methods=
+
+# all three are there
+
+
+class Book:
+    price=100
+    totalpages=500
+    def __init__(self,title,author):
+        self.t=title
+        self.a=author
+
+    @classmethod
+    def update(cls,newprice,newpagecount):
+        cls.price=newprice
+        cls.totalpages=newpagecount
+    
+    @classmethod
+    def addnew(cls,author):
+        cls.author2=author
+
+    def show(self):
+        print(self.t,self.a,Book.price,Book.totalpages)
+
+
+obj=Book("python","jatin")
+Book.update(110,550)
+obj.show()
+
+# ans =  python jatin 110 550
 
 

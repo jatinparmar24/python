@@ -1,19 +1,23 @@
-class Mobile:
-    '''mobile name'''
-    another="oppo"
-    def __init__(self,name,comp):
-        self.a=name
-        self.s=comp
-        print(Mobile.another)
+class Book:
+    price=100
+    totalpages=500
+    def __init__(self,title,author):
+        self.t=title
+        self.a=author
 
-    def addnew(self):
-        x=2
-        print("value of x",x)
+    @classmethod
+    def update(cls,newprice,newpagecount):
+        cls.price=newprice
+        cls.totalpages=newpagecount
+    
+    @classmethod
+    def addnew(cls,author):
+        cls.author2=author
 
     def show(self):
-        print(self.a,self.s,Mobile.another)
+        print(self.t,self.a,Book.price,Book.totalpages)
 
-obj=Mobile("apple","vivo")
 
-obj.addnew()
+obj=Book("python","jatin")
+Book.update(110,550)
 obj.show()
