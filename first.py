@@ -17,7 +17,18 @@ class Book:
     def show(self):
         print(self.t,self.a,Book.price,Book.totalpages)
 
+    @staticmethod
+    def Welcome():
+        print("Welcome to My Website ")
+
+    @staticmethod
+    def Thanks():
+        print("Visit Again")
+
 
 obj=Book("python","jatin")
 Book.update(110,550)
+Book.Welcome()
 obj.show()
+Book.Thanks()
+obj.Thanks()
