@@ -3557,3 +3557,108 @@ Book.Thanks()
 # python jatin 110 550
 # Visit Again
 
+
+# oops properties = =======================================================================================================================
+
+# 1 = abstraction = hiding internal process 
+# abstract class is a class where atleast 1 abstract method is present 
+# abc = abstract base class
+
+from abc import ABC , abstractmethod
+
+class Bankapp(ABC):
+    def login(self):
+        print("User Login ")
+
+    def logout(self):
+        print("User logout ")
+
+    def userdata(self):
+        print("User database")
+    
+    @abstractmethod
+    def database(self):
+        pass
+    
+
+class Webpage(Bankapp):
+    def new(self):
+        print("database accepted")
+
+obj=Webpage()    // error
+obj.database()
+obj.login()
+obj.logout()
+obj.userdata()
+# show error because we can't create obj without @abstractmethod in Webpage = 'database'
+
+# completed with abstract method=
+from abc import ABC , abstractmethod
+
+class Bankapp(ABC):
+    def login(self):
+        print("User Login ")
+
+    def logout(self):
+        print("User logout ")
+
+    def userdata(self):
+        print("User database")
+    
+    @abstractmethod
+    def database(self):
+        pass
+    
+
+class Webpage(Bankapp):
+    def database(self):
+        print("database accepted")
+
+obj=Webpage()
+obj.database()
+obj.login()
+obj.logout()
+obj.userdata()
+
+
+# ans 
+# database accepted
+# User Login 
+# User logout 
+# User database
+
+# 2 = Encapsulation =   wrapping up of data in single unit
+# any example of class
+
+
+# 3 = Inheritance = inderitence of parent's data by child
+# advantages = code reusability, time saving , reduce redundency(repeatation of code ) = 
+
+class A:
+    x=10
+    y=20
+
+    def home(self):
+        print("Home = ")
+
+    def car(self):
+        print("Car = ")
+
+class B(A):
+    def new(self):
+        print("New Home")
+  
+
+obj=B()
+obj.home()
+obj.car()
+obj.new()
+print(A.x)
+print(B.x)
+
+# ans = 
+# Home = 
+# Car = 
+# New Home
+# 10
+# 20
