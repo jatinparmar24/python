@@ -3662,3 +3662,146 @@ print(B.x)
 # New Home
 # 10
 # 20
+
+
+# Types of Inheritance = 
+# 1 = single level inheritance = parent to child 
+
+# 2 = multiple inheritance = 
+# multiple parent to one child
+
+# 3 = multilevel inheritance = 
+# grand parent to parent and parent to child 
+
+# 4 = herarichal inheritance = 
+# parent to multiple child
+
+# 5 = hybrid inheritance =  use of 2 types of inheritance
+# multiple parent to child and from child to multiple grand child
+
+
+
+
+
+
+
+# python does not support method overloading 
+#  same name of method in one class 
+
+
+
+
+
+# method over-riding = 
+
+# 2 different class with in heritance
+class Parent:
+    z=12
+    def home(self):
+        print("Parent's property")
+
+class Child(Parent):
+    y=122
+    def home(self):
+        print("Carrr")
+
+obj=Child()
+obj.home()
+
+# ans = Carrr
+
+
+# super method to call super class or parent class=
+
+class Parent:
+    z=12
+    def home(self):
+        print("Parent's property")
+
+class Child(Parent):
+    y=122
+    def home(self):
+        super().home()
+        print("Carrr")
+
+obj=Child()
+obj.home()
+
+# ans =
+# Parent's property
+# Carrr
+
+
+
+
+
+# Example of types of inheritance 
+ 
+#  1 = single level inheritance = 
+
+class Parent:
+    z=12
+    def home(self):
+        print("Parent's property")
+
+class Child(Parent):
+    y=122
+    def car(self):
+        print("Carrr")
+
+obj=Child()
+print(Child.z)
+obj.home()
+obj.car()
+
+# ans =
+# 12
+# Parent's property
+# Carrr
+
+
+# 2 = multiple inheritance = 
+
+# mro method = method resolution operator =  check the parent in child parameter from left and search in there if that data is present in or not
+
+class Parent1:
+    z=12
+    def home(self):
+        print("Parent's 1  property")
+
+class Parent2:
+    y=122
+    def home(self):
+        print("Parent's 2  property")
+
+class Child(Parent1,Parent2):
+    def car(self):
+        print("Child's car")
+
+obj=Child()
+obj.home()
+
+# ans = Parent's 1  property
+
+#        or  ==========
+
+class Parent1:
+    z=12
+    def home(self):
+        print("Parent's 1  property")
+
+class Parent2:
+    y=122
+    def home(self):
+        print("Parent's 2  property")
+
+class Child(Parent2,Parent1):
+    def car(self):
+        print("Child's car")
+
+obj=Child()
+obj.home()
+
+# ans = Parent's 2  property
+
+
