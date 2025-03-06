@@ -362,7 +362,7 @@ print(l1)
 # 2 = key-word argument
 # 3 = default argument
 # 4 = variable length argument   or   (* args)
-# (* args) =  use to pass tuple as a argument
+# (* args) =  use to pass tuple as a argument = get multiple values at runtime
 
 
 # 15 = scope of varaible = 
@@ -2767,6 +2767,11 @@ polymorphism = reusability
 # static method = @staticmethod = use to modify the variable  and instead of self we now use cls. = 
 
 
+# 8 = properties of oops = 
+# 8a=abstraction
+# 8b=encapsulation
+# 8c=inheritance
+# 8d=polymorphism
 
 
 
@@ -3628,7 +3633,8 @@ obj.userdata()
 # User database
 
 # 2 = Encapsulation =   wrapping up of data in single unit
-# any example of class
+
+# any example of any class is Encapsulation
 
 
 # 3 = Inheritance = inderitence of parent's data by child
@@ -3857,3 +3863,62 @@ obj2.home()
 # Child 1 class
 # parent class
 # Child 2 class
+
+
+
+# 5 = hybrid inheritance = 
+
+
+class Parent:
+    def home(self):
+        print("parent class")
+
+class Child1(Parent):
+    def home(self):
+        print("Child 1 class")
+
+class Child2(Parent):
+    def home(self):
+        print("Child 2 class")
+
+class Child3(Child1,Child2):
+    def new(self):
+        print("Child3 class")
+
+obj=Child3()
+obj.home()
+print(Child3.__mro__)
+
+# output = 
+
+# Child 1 class
+# (<class '__main__.Child3'>, <class '__main__.Child1'>, <class '__main__.Child2'>, <class '__main__.Parent'>, <class 'object'>)
+
+
+
+# 4 = polymorphism = diffrent form of one thing = 
+
+x='jatin'
+print(len(x))
+
+x=['jatin']
+print(len(x))
+
+# output = 
+# 5
+# 1
+
+a=4
+b=3
+z=a*b
+print(z)
+
+x='jatin'
+y=2
+z=x*y
+print(z)
+
+# output = 
+# 12
+# jatinjatin
+
