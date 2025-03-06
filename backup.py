@@ -3762,7 +3762,7 @@ obj.car()
 
 # 2 = multiple inheritance = 
 
-# mro method = method resolution operator =  check the parent in child parameter from left and search in there if that data is present in or not
+# mro method = method resolution order =  check the parent in child parameter from left and search in there if that data is present in or not
 
 class Parent1:
     z=12
@@ -3805,3 +3805,55 @@ obj.home()
 # ans = Parent's 2  property
 
 
+# 3 = multi-level inheritance = 
+
+class GrandParent:
+    z=12
+    def home(self):
+        print("Parent's 1  property")
+
+class Parent(GrandParent):
+    y=122
+    def car(self):
+        print("Parent's 2  property")
+
+class Child(Parent):
+    def car(self):
+        print("Child's car")
+
+obj=Child()
+obj.home()
+obj.car()
+
+# ans = 
+# Parent's 1  property
+# Child's car
+
+
+
+
+# 4 = hierarical inheritance = 
+
+
+class Parent:
+    def home(self):
+        print("parent class")
+
+class Child1(Parent):
+    def home(self):
+        print("Child 1 class")
+        super().home()
+
+class Child2(Parent):
+    def home(self):
+        print("Child 2 class")
+
+obj1=Child1()
+obj1.home()
+obj2=Child2()
+obj2.home()
+
+# output = 
+# Child 1 class
+# parent class
+# Child 2 class

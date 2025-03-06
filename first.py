@@ -1,18 +1,18 @@
-class Parent1:
-    z=12
+
+class Parent:
     def home(self):
-        print("Parent's 1  property")
+        print("parent class")
 
-class Parent2:
-    y=122
+class Child1(Parent):
     def home(self):
-        print("Parent's 2  property")
+        print("Child 1 class")
+        super().home()
 
-class Child(Parent1,Parent2):
-    def car(self):
-        print("Child's car")
+class Child2(Parent):
+    def home(self):
+        print("Child 2 class")
 
-obj=Child()
-obj.home()
-
-  
+obj1=Child1()
+obj1.home()
+obj2=Child2()
+obj2.home()
