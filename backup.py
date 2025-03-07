@@ -2777,6 +2777,31 @@ polymorphism = reusability
 
 
 #  = file handeling
+# permanent data storage 
+
+# types of file:-
+# 1 = text file -> store = string data = extension = (.txt , .doc , .pdf)
+
+# 2 =  binary file -> store = image , audio ,video =
+# in puthon = binary file = store = list , tuple , set , dict . (n coded formate)  extension = (.bin , .exe , .pkl/.pickle , .dat)
+
+# 3 = csv file = key value  extension = (.csv)
+
+
+# security = binary file is secure
+
+# response = binary file has fast response
+
+
+# method to create or use a file :-
+# 1= open()      2=read()/write() to perform operation(CRUD)      3= close()
+
+# check file attribute:
+# name,  mode,  readable(),   writeable(),  closed
+
+# syntax:-
+open('filename with extension','mode')      //  mode = x(create) , w(write) , r(read) , q(append)
+
 
 
 
@@ -3921,4 +3946,6 @@ print(z)
 # output = 
 # 12
 # jatinjatin
+
+
 

@@ -1,9 +1,8 @@
-a=4
-b=3
-z=a*b
-print(z)
+def sqau(x):
+    return x**2
+    
+l1=eval(input("Enter Any Numeric Collection = "))
 
-x='jatin'
-y=2
-z=x*y
-print(z)
+res=map(sqau,l1)
+print(res)
+print(list(res))
