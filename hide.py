@@ -1,9 +1,6 @@
-x=10
-y=20
-z=40
-
-# def add():
-#     print("Hello World")
-
-def add(a,s,d):
-    return a+s+d
+f=open('n3.txt','r')
+print(f.name)
+print(f.mode)
+print(f.writable())
+print(f.closed)
+print(f.readable())

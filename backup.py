@@ -2800,7 +2800,11 @@ polymorphism = reusability
 # name,  mode,  readable(),   writeable(),  closed
 
 # syntax:-
-open('filename with extension','mode')      //  mode = x(create) , w(write) , r(read) , q(append)
+open('filename with extension','mode')      //  mode = x(create) , w(write) , r(read) , a(append)
+
+write() -> insert data 
+write() -> single line data
+writelines -> multiple lines of data
 
 
 
@@ -3948,4 +3952,96 @@ print(z)
 # jatinjatin
 
 
+# file handling
+
+# 1 a =  open()
+
+# use to create file but only one of the same name 
+
+# x= mode  (create)
+
+f=open('n1.txt','x')
+print(f.name)
+print(f.mode)
+print(f.writable())
+print(f.closed)
+print(f.readable())
+
+# output
+# n1.txt            // new file created
+# x
+# True
+# False
+# False
+# not work on second time
+# and it creates a n1.txt file
+
+# w = mode   (write)
+f=open('n1.txt','w')
+print(f.name)
+print(f.mode)
+print(f.writable())
+print(f.closed)
+print(f.readable())
+
+# output = if we write something after w mode we can read it but if we again open it with w mode then it removes privios data 
+# so we never use w and x mode two times not more than one  instead use (a) mode
+# n1.txt
+# w
+# True
+# False
+# False
+
+# a = mode (append)
+# best to use 
+
+# r = mode (read)
+# if the file present then its ok but if that file doesn't exist then it shows error    =============== imp
+
+
+# table for mode = 
+
+# mode         create_new file          work on existing file           curson position      readable           writable
+#  x               yes                    no                               0                  no                yes
+#  w               yes                    yes                              0                  no                yes
+#  r               no                     yes                              0                  yes               no
+#  a               yes                    yes                            last position        no                yes
+
+
+
+# 2 b = write()
+
+f=open('p1.txt','w')
+data="this is python class"
+f.write(data)
+f.close()
+
+# it create a file with data  =and that data reamins every times
+# if we change content then it also change in that file because cursor pointer is zero always
+
+# writelines forr multiple line
+f=open('p1.txt','w')
+data=['h1\n','hello\n','welcome\n']
+f.writelines(data)
+f.close()
+
+# output
+
+# h1
+# hello
+# welcome
+
+# if we write it in a mode 
+f=open('p1.txt','a')
+data=['h1\n','hello\n','welcome\n']
+f.writelines(data)
+f.close()
+
+# output
+# h1
+# hello
+# welcome
+# h1
+# hello
+# welcome
 

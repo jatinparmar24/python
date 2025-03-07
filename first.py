@@ -1,8 +1,4 @@
-def sqau(x):
-    return x**2
-    
-l1=eval(input("Enter Any Numeric Collection = "))
-
-res=map(sqau,l1)
-print(res)
-print(list(res))
+f=open('p1.txt','a')
+data=['h1\n','hello\n','welcome\n']
+f.writelines(data)
+f.close()
