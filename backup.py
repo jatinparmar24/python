@@ -2806,6 +2806,11 @@ write() -> insert data
 write() -> single line data
 writelines -> multiple lines of data
 
+read() -> all data
+read(n) -> read(10) -> 10 character read
+readline() -> single line data
+readlines() -> multiple line data
+
 
 
 
@@ -4045,3 +4050,18 @@ f.close()
 # hello
 # welcome
 
+
+# read method
+
+f=open('n1.txt','r')
+data=f.read()
+print(data)
+
+# output=dfkjfsghiuhfiu
+
+# read(n)
+f=open('n1.txt','r')
+data=f.read(5)
+print(data)
+
+# output = dfkjf

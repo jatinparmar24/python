@@ -1,4 +1,3 @@
-f=open('p1.txt','a')
-data=['h1\n','hello\n','welcome\n']
-f.writelines(data)
-f.close()
+f=open('n1.txt','r')
+data=f.read(5)
+print(data)
