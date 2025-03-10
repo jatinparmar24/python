@@ -2812,7 +2812,8 @@ readline() -> single line data
 readlines() -> multiple line data
 
 
-
+tell()=to find the position of curson in mode methods
+seek(how much read from last ,from where to read)
 
 
 
@@ -4065,3 +4066,32 @@ data=f.read(5)
 print(data)
 
 # output = dfkjf
+
+
+
+# tell() = method
+# with x and w mode
+
+f=open('n2.txt','x')
+f.write("Jatin")
+print(f.tell())
+# output = 5 = postion of cursor
+
+
+# with a mode
+f=open('n2.txt','a')
+print(f.tell())
+f.write("Jatin")
+print(f.tell())
+# 5
+# 10
+
+
+# read() method on r mode
+
+f=open('n2.txt','r')
+data=f.read()
+print(data)
+print(f.tell())
+
+# output = curson at last position
