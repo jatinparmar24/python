@@ -19,9 +19,9 @@
 # ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
 
 
-# 3=identifiers         ===============================================================================================
+# 3=identifiers                           (line = 510 - 557)
 
-# 4=operators            =======================================================================================================
+# 4=operators                             (line = 559 - 717)
 
 # a = arithmatic operators===   [    +,-,*,/,%,//=floor,**=power  ]  ==arithmatic operators return value
 # b = comparasion operators====    (== , != , > ,< , <=, >=)  ==  return boolean
@@ -38,7 +38,7 @@
 #  1c=Decimal=(0,1,2,3,4,5,6,7,8,9)  ==  length or base =10
 #  1d= Hexadecimal=([0,1,2,3,4,5,6,7,8,9]+[A,B,C,D,E,F]||[a,b,c,d,e,f]) =  length or base =16
 
-# 5=literals   [The value asigned to a constant variable is called literals]          =====================================================
+# 5=literals   [The value asigned to a constant variable is called literals]                       (line = 720 - 811)                      
 
 # literals types===  [numeric, string, boolen, list, tuple, dict , (set,frozenset)]  set and frozenset are not used in web development
 # and these types are called data types
@@ -77,7 +77,7 @@
 # order not fixed \\ provide random order
 
 
-# 6 (                            ==============================================================
+# 6 (                           
 
 #  pythom is not a call by value language    (not)
 
@@ -145,7 +145,7 @@ print(id(s2))
 
 
 
-# 7 = indexing            =========================================================================================================
+# 7 = indexing                          (line = 814 - 858)      
 
 # pyhton support positive indexing = points
 # a = start from 0
@@ -168,7 +168,7 @@ print(id(s2))
 # indexing works on ordered collection = like == string , list , tuple
 # unordered collection = set and frozenset    here indexing not work
 
-# 8 = slicing          ======================================================================================================
+# 8 = slicing              (line = 860 - 868) many more to practice
 
 # slicing works on ordered collection = like == string , list , tuple
 # syntax   =    collecton[start : stop : step/jump/direction]
@@ -185,8 +185,7 @@ print(id(s2))
 
 
 
-# 9 = data-types   ===================================================================================================================== 
-
+# 9 = data-types                    (line 877 - 1503)
 
 # 9a = numeric === (integer ,float , complex)
 
@@ -310,7 +309,7 @@ print(l1)
 # mathematical operations =   union() , intersection() , difference() , symmetric_difference() , isdisjoint() , issubset() , issubsuperset()
 
 
-# 10 = control statement         ===============================================================================
+# 10 = control statement            (line = 1507 - 1856)
 
 # python is a squential + conditional statement
 # 
@@ -332,15 +331,15 @@ print(l1)
 
 
 
-# 11 = pattern
+# 11 = pattern                      (line = 1861 - 2072)
 
-# 12 = calculator
+# 12 = calculator                   (line = 2077 - 2149)
 
-# 13 = LCM And HCF
+# 13 = LCM And HCF                  (line = 2153 - 2173)
 
 
 
-# 14 = Function 
+# 14 = Function                    (line = 2178 - 2399)
 
 
 # function is a block of reusable code 
@@ -365,7 +364,7 @@ print(l1)
 # (* args) =  use to pass tuple as a argument = get multiple values at runtime
 
 
-# 15 = scope of varaible = 
+# 15 = scope of varaible =                  (line = 2403 - 2490)
 
 # 1a = local variable   = access only in its block 
 # 1b = global variable   = access throghout the code 
@@ -2813,7 +2812,9 @@ readlines() -> multiple line data
 
 
 tell()=to find the position of curson in mode methods
-seek(how much read from last ,from where to read)
+seek(how much read from last ,from where to read)   
+# from where to read = 0 is default value given , 1 is for current position , 2 for negative indexing
+
 
 
 
@@ -2928,6 +2929,7 @@ li=[1,2,3,4,5,6,7,8,9,10]
 res=map(even,li)
 print(list(res))
 
+# output = ['odd', 'even', 'odd', 'even', 'odd', 'even', 'odd', 'even', 'odd', 'even']
 
 
 
@@ -4095,3 +4097,42 @@ print(data)
 print(f.tell())
 
 # output = curson at last position
+
+
+
+# seek() method
+
+f=open('n2.txt','rb')  // rb for byte mode // r is mode and rb is btye mode
+data=f.read()
+print(data)
+print(f.tell())
+data=f.read()
+print(data)
+f.seek(-10,2)
+print(f.tell())
+
+# output
+b'JatinJatinJatinJatinJatin'
+25
+b''
+15
+
+# read where cursor is 
+f=open('n2.txt','rb')
+data=f.read()
+print(data)
+print(f.tell())
+data=f.read()
+print(data)
+f.seek(-10,2)
+print(f.tell())
+data=f.read()   // data=f.read(5)==output='Jatin'   
+print(data)
+
+# output
+b'JatinJatinJatinJatinJatin'
+25
+b''
+15
+b'JatinJatin'
+
