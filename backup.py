@@ -3110,7 +3110,7 @@ print(res)
 # [4, 9, 16, 25]
 
 
-# adding to list with lambda
+# adding two list with lambda
 l1=[2,3,4,5,6]
 l2=[3,4,5,6,7]
 res=list(map(lambda x,y:x+y , l1,l2))
@@ -3207,7 +3207,7 @@ print(x,y,z)
 
 
 # 4 = decorator without @
-# normsl calling
+# normal calling
 
 def outerfun(fun1):
     def innerfun():

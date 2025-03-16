@@ -1,10 +1,13 @@
-def even(x):
-    if x%2==0:
-        return 'even'
 
-    else :
-        return 'odd'
+def outerfun(fun1):
+    def innerfun():
+        print("Before Modification")
+        fun1()
+        print("After Modification")
+    return innerfun
 
-li=[1,2,3,4,5,6,7,8,9,10]
-res=map(even,li)
-print(list(res))
+def fun():
+    print("This is from main Function")
+
+res=outerfun(fun)
+res()
