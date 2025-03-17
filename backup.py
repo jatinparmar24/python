@@ -2647,6 +2647,7 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # number of input is always equal to number of output
 # we can use them directly
 
+
 # 1b = filter()
 # number of input is >= number of output
 # we can use them directly
@@ -2674,12 +2675,12 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # we can't use while loop with lambda beacuse it support one line expression and while loop need two line of expression like 1 is condition and 2nd is increament
 
 # 3 =  Generators  = 
-#   generator is a special type of function that can be use to generate iterate object.
+# generator is a special type of function that can be use to generate iterate object.
 # instead of return keyward we now use 'yield' keyward.
 
 
 # 4 =  Decorators  = 
-# special type of higher order function that can take function as an arugumeht and it also return a function (where we change the behaviour)
+# special type of higher order function that can take function as an arugument and it also return a function (where we change the behaviour)
 # change the internal working without changing it's code
 
 
@@ -2689,7 +2690,7 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # a .py extension file that contains variable,functions,class , methods .
 
 
-# 6 = elliyasing =
+# 6 = alliyasing =
 # to use small name instead of big original name . it represent by = as keyward
 # example = 
 # import calculator as c
@@ -2860,7 +2861,7 @@ seek(how much read from last ,from where to read)
 # collection always need to have data type
 1 = Higher Order Function
 
-#   1a = map() = number pf input = number of output
+#   1a = map() = number of input = number of output
 #       syntax = map(function_name , collection)                          // collection=iterables, string , list , tuple , set , dict
 # collection always need to have data type
 #     another syntax = map(function_name , iterable1,iterable2)
@@ -2877,7 +2878,7 @@ def sqau(x):
 l1=eval(input("Enter Any Numeric Collection = "))
 
 res=map(sqau,l1)
-print(res)
+# print(res)
 print(list(res))
 
 
@@ -2904,6 +2905,7 @@ y=eval(input("Enter Second string = "))
 
 res=map(powerr,x,y)
 print(list(res))
+
 
 
 # question  take 3 list and add them
@@ -3203,7 +3205,7 @@ x=next(res)
 y=next(res)
 z=next(res)
 print(x,y,z)
-# ans = 0 ,2 , 4
+# ans = 0 , 2 , 4
 
 
 # 4 = decorator without @
@@ -3343,14 +3345,13 @@ print(x)
 # __init__     =  in build  constructor 
 
 class Student:
-    '''student details'''
+    '''Student Details'''
     def __init__(self):
         print("constructor called")
 
 # obj=Student  =  not give any thing
 obj=Student()
-
-# constructor called
+# output = constructor called
 
 
 
@@ -3508,7 +3509,7 @@ class Mobile:
 
     def addnew(self):
         x=2                // local
-        print("value of x",x)
+        print("value of x=",x)
 
     def show(self):
         print(self.a,self.s,Mobile.another)
@@ -3520,7 +3521,7 @@ obj.show()
 
 # ans =
 oppo
-value of x 2
+value of x= 2
 apple vivo oppo
 
 
@@ -3958,6 +3959,21 @@ print(z)
 # output = 
 # 12
 # jatinjatin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # file handling
