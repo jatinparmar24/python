@@ -2681,7 +2681,7 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 
 # 4 =  Decorators  = 
 # special type of higher order function that can take function as an arugument and it also return a function (where we change the behaviour)
-# change the internal working without changing it's code
+# change's the working internally , without changing it's code
 
 
 
@@ -2866,7 +2866,7 @@ seek(how much read from last ,from where to read)
 # collection always need to have data type
 #     another syntax = map(function_name , iterable1,iterable2)
 
-# we can send multiple collecttions only in map method             //  imp
+# we can send multiple collections only in map method             //  imp
 
 # 1a map()
 
@@ -3395,7 +3395,7 @@ jatin
 95
 
 
-# multiple constructor  //  python does not support overloadind
+# multiple constructor  //  python does not support overloading
 
 # it gives result of the last one 
 
@@ -3449,15 +3449,16 @@ print(obj.x,obj.y,obj.z,obj.p,obj.school_name)
 
 class Student:
     '''School Details'''
-    school="ASSF"            // declaration of static method
+    school="ASSF"            // decla
+    ration of static variable
 
     def __init__(self,name,roll):
         self.a=name
         self.b=roll
-        Student.scode=123                 // declaration of static method
+        Student.scode=123                 // declaration of static variable
     
     def new(self):
-        Student.city="Sehore"                 // declaration of static method
+        Student.city="Sehore"                 // declaration of static variable
         
 
     def show(self):

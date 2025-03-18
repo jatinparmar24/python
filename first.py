@@ -1,3 +1,2 @@
-x= lambda p :[for i in range(p)]
-p=int(input("Enter Number = "))
-print(x(p))
+str='python'
+print(str[0:4:-4])
