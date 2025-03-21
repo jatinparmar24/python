@@ -295,7 +295,7 @@ print(l1)
 # symmetric_difference_update = 
 # isdisjoint() 
 # issubset() 
-#  issubsuperset()
+# issubsuperset()
 
 
 # 9g = frozenset
@@ -478,6 +478,7 @@ print(type(x))
 
 
 
+
 print("Enter Two Numbers")
 print(int(input("Enter First Number"))+int(input("Enter Second Number")))
 
@@ -555,7 +556,7 @@ print("Hello =",name)
 # and that (name) might be declared also
 print(id(name))
 
-# comparasion operators
+# comparasion operators = it returns boolean 
 
 # x=10
 # y=20
@@ -584,14 +585,14 @@ print(id(name))
 # print(x<y)
 # print(x<=y)
 
-# assingment operators
+# assingment operators  = return value
 x=5
 x=x+2
 print(x) 
 # ans=7
 
 #  logical operators   (and)
-
+# return boolean
 x=10
 y=12
 z=13
@@ -623,7 +624,7 @@ print(not(x<y or y<z))
 print(not(x<y or y>z))
 # ans False
 
-#  membership operators
+#  membership operators = return boolean
 str1='jatin'
 print('a' in str1)
 # True
@@ -631,7 +632,7 @@ print('a' in str1)
 print('a' not in str1)
 # False
 
-# identity operators
+# identity operators = return boolean
 
 x=10
 y=20
@@ -668,7 +669,7 @@ print(x is y)
 print(x==y)
 # examples
 
-# bitwise operators
+# bitwise operators = return value
 
 # &   (and operator)
 x=10
@@ -873,7 +874,6 @@ print(str1[: : -1])
 
 
 
-
 # datatypes         ===================
 
 # integer === 
@@ -969,7 +969,7 @@ print(str1.title())
 #  I Love Python
 
 str1 = " I Love Python"
-print(str1.capitalize())
+print(str1.capitalize())   // make all letter capital
 #  i love python
 
 str1 = " I Love Python"
@@ -1051,7 +1051,7 @@ l1=[22,23,"jatin",2]
 x=("parmar")
 l1.extend(x)
 print(l1)
-# ans [22, 23, 'jatin', 2, 10, 23, 57]
+# ans = [22, 23, 'jatin', 2, 'p', 'a', 'r', 'm', 'a', 'r']
 
 # 3 = insert ==
 l1=[22,23,"jatin",2]
@@ -1078,7 +1078,7 @@ l1.pop()
 print(l1)
 # ans [22, 23, 2, 5]
 
-#  7 = remove ==           id duplicate object in array then remove first of list
+#  7 = remove ==           if duplicate object in array then remove first of list
 l1=[22,23,2,5,3]
 l1.remove(5)
 print(l1)
@@ -1105,7 +1105,7 @@ print(l1.count(23))
 
 # 11 = index  ==       indexing number
 l1=[22,23,2,5,3,23]
-print(l1.count(2))
+print(l1.index(23))
 # ans 1
 
 # 4 tuple

@@ -1,2 +1,3 @@
-str='python'
-print(str[0:4:-4])
+t1=(1,2,3,4,5,6,7)
+
+print(t1.sort())
