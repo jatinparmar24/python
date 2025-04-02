@@ -30,7 +30,7 @@
 # d = logical operators === [and , or , not]   // not makes true into false     and false into true
 # e = identity operators  ===  [is , is not]   is = compare memory address,refrence of object
 # f = membership operators   ====  [in , not in]  == checks if present or not 
-# g = bitwise operators     ====  [& , | , ~ , ^ , >> , <<]  [and , or , not ,x-or , right-shift , left-sift]
+# g = bitwise operators     ====  [& , | , ~ , ^ , >> , <<]  [and , or , not ,x-or , right-shift , left-sift]  == bitwise operator return value
 
 # number system = collection of digit---
 #  1a= Binary=(0,1)  == length or base =2
@@ -50,9 +50,9 @@
 
 # 5B =string  ==    collection of characters     
 # represented by==
-# ''=single quote     ====     used for single line string   
-#    ""=double quote   ====    used for single line string  (prefer single quote because it take less memory then double quote)
-#   '''=triple quote   ==== used for multiline string
+# '' = single quote     ====     used for single line string   
+# "" = double quote   ====    used for single line string  (prefer single quote because it take less memory then double quote)
+# '''= triple quote   ==== used for multiline string
 
 # 5C = boolean  == True or False
 
@@ -262,7 +262,7 @@ print(l1)
 # indexing and slicing not supported
 # squential collection but not ordered
 # key must be unique          and value  may be duplicate
-# mutbale in nature
+# mutable in nature
 # syntax   d1={ 'key':''value','key':''value','key':''value',}
 #                ^  1-element    ^  2-element   ^ 3-element
 
@@ -364,7 +364,7 @@ print(l1)
 # (* args) =  use to pass tuple as a argument = get multiple values at runtime
 
 
-# 15 = scope of varaible =                  (line = 2403 - 2490)
+# 15 = scope of variable =                  (line = 2403 - 2490)
 
 # 1a = local variable   = access only in its block 
 # 1b = global variable   = access throghout the code 
@@ -463,7 +463,7 @@ print(type(x))
 #  ascii to char == chr()
 
 
-
+        
 
 
 
@@ -3277,7 +3277,32 @@ fun(x,y,z)
 # ans  =  90
 
 
+# another example of decorstor = 
+def use_decorator(func):
+    def wrap():
+        print(f"Starting :{func. __name__}:function")
+        func()
+        print("Completed")
+    return wrap
 
+@use_decorator
+def first():
+    print(" First Started")
+
+@use_decorator
+def second():
+    print("Second Started")
+
+first()
+second()
+
+# output = 
+Starting :first:function
+ First Started
+Completed
+Starting :second:function
+Second Started
+Completed
 
 
 

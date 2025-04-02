@@ -1,3 +1,17 @@
-t1=(1,2,3,4,5,6,7)
+def use_decorator(func):
+    def wrap():
+        print(f"Starting :{func. __name__}:function")
+        func()
+        print("Completed")
+    return wrap
 
-print(t1.count(4))
+@use_decorator
+def first():
+    print(" First Started")
+
+@use_decorator
+def second():
+    print("Second Started")
+
+first()
+second()
