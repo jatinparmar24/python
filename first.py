@@ -1,17 +1,9 @@
-def use_decorator(func):
-    def wrap():
-        print(f"Starting :{func. __name__}:function")
-        func()
-        print("Completed")
-    return wrap
-
-@use_decorator
-def first():
-    print(" First Started")
-
-@use_decorator
-def second():
-    print("Second Started")
-
-first()
-second()
+for i in range(1, 16):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)

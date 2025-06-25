@@ -46,7 +46,7 @@
 # 5A=numeric ===
 # a=integer== 2,4,5,7,etc
 # b=float== 3.4,1.2,5.4,etc
-# c=complex== x+yj             x is real number  and y is imaginary number
+# c=complex== x+yj             x is real number  and y is imaginary numbersa
 
 # 5B =string  ==    collection of characters     
 # represented by==
@@ -93,7 +93,7 @@ print(id(y))
 
 # list
 l1=[1,2,3,'jat']
-l2=[1,2,3,'jat']
+l2=[1,2,3,'jat'] 
 print(id(l1))
 print(id(l2))
 
@@ -537,8 +537,8 @@ print(_1x2y)
 #  can't use space in declaration
 
 # wrong
-x y =12
-print(x y)
+# x y =12
+# print(x y)
 
 # right
 x_y=12
@@ -969,7 +969,7 @@ print(str1.title())
 #  I Love Python
 
 str1 = " I Love Python"
-print(str1.capitalize())   // make all letter capital
+print(str1.capitalize())   # make all letter capital
 #  i love python
 
 str1 = " I Love Python"
@@ -2123,8 +2123,8 @@ while True:
     n=int(input("Enter Your Choice = "))
     p=(1,2,3,4,5)
     if n in p:
-        x=int(input("Enter First Number"))
-        y=int(input("Enter Second Number"))
+        x=int(input("Enter First Number = "))
+        y=int(input("Enter Second Number = "))
 
         if n==1:
             z=x+y
@@ -2190,7 +2190,7 @@ def sum(x,y):
     return x+y
 z= sum (2)
 print(z)
-error = missing one argument
+#error = missing one argument
 
 
 # 2 = keyward argument
@@ -2199,7 +2199,7 @@ def sum(x,y):
     return x+y
 z= sum (y=5,x=5)
 print(z)
-ans 10 
+#ans 10 
 
 #     or 
 # we can ask at run time also
@@ -2707,10 +2707,10 @@ print("num = ",num , "small = ",small , "capital = ",capital)
 # to add real world entities to programming world
 
 # properties of oops = 
-abstraction = data-protection
-encapsulation = data-protection
-inheritence = reusability
-polymorphism = reusability
+# abstraction = data-protection
+# encapsulation = data-protection
+# inheritence = reusability
+# polymorphism = reusability
 
 
 
@@ -2800,20 +2800,20 @@ polymorphism = reusability
 # name,  mode,  readable(),   writeable(),  closed
 
 # syntax:-
-open('filename with extension','mode')      //  mode = x(create) , w(write) , r(read) , a(append)
+# open('filename with extension','mode')      //  mode = x(create) , w(write) , r(read) , a(append)
 
-write() -> insert data 
-write() -> single line data
-writelines -> multiple lines of data
+# write() -> insert data 
+# write() -> single line data
+# writelines -> multiple lines of data
 
-read() -> all data
-read(n) -> read(10) -> 10 character read
-readline() -> single line data
-readlines() -> multiple line data
+# read() -> all data
+# read(n) -> read(10) -> 10 character read
+# readline() -> single line data
+# readlines() -> multiple line data
 
 
-tell()=to find the position of curson in mode methods
-seek(how much read from last ,from where to read)   
+# tell()=to find the position of curson in mode methods
+# seek(how much read from last ,from where to read)   
 # from where to read = 0 is default value given , 1 is for current position , 2 for negative indexing
 
 
@@ -2859,7 +2859,7 @@ seek(how much read from last ,from where to read)
 
 
 # collection always need to have data type
-1 = Higher Order Function
+# 1 = Higher Order Function
 
 #   1a = map() = number of input = number of output
 #       syntax = map(function_name , collection)                          // collection=iterables, string , list , tuple , set , dict
@@ -2949,13 +2949,13 @@ res=filter(even,li)
 print(list(res))
 
 # question = odd number
-if x%2!=0
+# if x%2!=0
 
 # question = positive
-if x>=0
+# if x>=0
 
 # question  = negative 
-if x<0
+# if x<0
 
 
 # question = find name with less character then 3
@@ -3051,7 +3051,7 @@ print(res)
 
 
 
-2 = lambda function
+# 2 = lambda function
 
 # question  = add
 add=lambda x,y:x+y
@@ -3208,6 +3208,10 @@ print(x,y,z)
 # ans = 0 , 2 , 4
 
 
+
+
+
+
 # 4 = decorator without @
 # normal calling
 
@@ -3297,12 +3301,12 @@ first()
 second()
 
 # output = 
-Starting :first:function
- First Started
-Completed
-Starting :second:function
-Second Started
-Completed
+# Starting :first:function
+#  First Started
+# Completed
+# Starting :second:function
+# Second Started
+# Completed
 
 
 
@@ -3357,7 +3361,7 @@ class Student:
     city='sehore'
 
 
-x=Student()   //  parentheises is neccesary to call the object of class
+x=Student()   # parentheises is neccesary to call the object of class
 print(x)
 
 # ans = 
@@ -3393,8 +3397,7 @@ class Student:
 obj=Student()
 print(id(obj))
 
-# 
-constructor called
+# constructor called
 self : 2565191069584
 2565191069584
 
@@ -3415,9 +3418,9 @@ print(obj.y)
 print(obj.z)
 
 # ans =
-jatin
-24
-95
+# jatin
+# 24
+# 95
 
 
 # multiple constructor  //  python does not support overloading
@@ -3437,7 +3440,7 @@ class Student:
 
 obj=Student()
 
-obj.__init__()  // we can call constructor 
+obj.__init__()  # we can call constructor 
 
 # constructor called
 
@@ -3449,19 +3452,19 @@ obj.__init__()  // we can call constructor
 class Student:
     '''student details'''
     def __init__(self,name,roll,marks):
-        self.x=name               //  instance varaible declare inside constructor
-        self.y=roll               //  instance varaible declare inside constructor
-        self.z=marks              //  instance varaible declare inside constructor
+        self.x=name               #  instance varaible declare inside constructor
+        self.y=roll               #  instance varaible declare inside constructor
+        self.z=marks              #  instance varaible declare inside constructor
 
     def add_new(self,city):
-        self.p=city                   //  instance varaible declare inside instance method
+        self.p=city                   #  instance varaible declare inside instance method
 
     def show(self):
-        print(self.x,self.y,self.z,self.p,self.school_name)       //  instance varaible call inside instance method
+        print(self.x,self.y,self.z,self.p,self.school_name)       #  instance varaible call inside instance method
     
        
 
-obj=Student('jatin',21,80)                  //  instance varaible declare outside of class
+obj=Student('jatin',21,80)                  #  instance varaible declare outside of class
 obj.add_new('sehore')
 obj.school_name='SHSS'
 obj.show()
@@ -3474,29 +3477,29 @@ print(obj.x,obj.y,obj.z,obj.p,obj.school_name)
 
 class Student:
     '''School Details'''
-    school="ASSF"            // decla
-    ration of static variable
+    school="ASSF"            # declare
+    #ration of static variable
 
     def __init__(self,name,roll):
         self.a=name
         self.b=roll
-        Student.scode=123                 // declaration of static variable
+        Student.scode=123                 # declaration of static variable
     
     def new(self):
-        Student.city="Sehore"                 // declaration of static variable
+        Student.city="Sehore"                 # declaration of static variable
         
 
     def show(self):
         print(Student.school,Student.scode,Student.city,Student.subject)
 
-Student.subject="PCM"                                    // declaration outside class
+Student.subject="PCM"                                    # declaration outside class
 obj=Student("Jatin",101)
 obj.new()
 obj.show()
 
 
  # 3 = local variable =
- class Student:
+class Student:
     '''School Details'''
     school="ASSF"
 
@@ -3516,7 +3519,7 @@ Student.subject="PCM"
 obj=Student("Jatin",101)
 obj.new()
 obj.show()
-print(school)
+#print(school)
        
 # ans == error in print(school)
 
@@ -3527,14 +3530,14 @@ print(school)
 
 class Mobile:
     '''mobile name'''
-    another="oppo"     // static
+    another="oppo"     #static
     def __init__(self,name,comp):
-        self.a=name        // instance                  
-        self.s=comp        // instance           
+        self.a=name        # instance                  
+        self.s=comp        # instance           
         print(Mobile.another)
 
     def addnew(self):
-        x=2                // local
+        x=2                # local
         print("value of x=",x)
 
     def show(self):
@@ -3546,9 +3549,9 @@ obj.addnew()
 obj.show()
 
 # ans =
-oppo
-value of x= 2
-apple vivo oppo
+# oppo
+# value of x= 2
+# apple vivo oppo
 
 
 
@@ -3654,7 +3657,7 @@ class Webpage(Bankapp):
     def new(self):
         print("database accepted")
 
-obj=Webpage()    // error
+obj=Webpage()    #error
 obj.database()
 obj.login()
 obj.logout()
@@ -4144,7 +4147,7 @@ print(f.tell())
 
 # seek() method
 
-f=open('n2.txt','rb')  // rb for byte mode // r is mode and rb is btye mode
+f=open('n2.txt','rb')  # rb for byte mode // r is mode and rb is btye mode
 data=f.read()
 print(data)
 print(f.tell())
@@ -4168,7 +4171,7 @@ data=f.read()
 print(data)
 f.seek(-10,2)
 print(f.tell())
-data=f.read()   // data=f.read(5)==output='Jatin'   
+data=f.read()   # data=f.read(5)==output='Jatin'   
 print(data)
 
 # output
@@ -4178,3 +4181,66 @@ b''
 15
 b'JatinJatin'
 
+
+
+
+# questions
+
+#FiboNacci Series
+
+n = int(input("Enter Number = "))
+
+def fibonaci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=' ')
+        a, b = b, a + b
+
+fibonaci(n)
+
+
+# Factorial =========================================================
+
+n = int(input("Enter a non-negative integer: "))
+
+def factorial(n):
+    if n < 0:
+        return "Factorial not defined for negative numbers"
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result
+
+print("Factorial:", factorial(n))
+
+
+# Is Prime Number ========================================
+
+n = int(input("Enter a non-negative integer: "))
+
+def is_prime(n):
+    if n<2:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return False
+    return True
+
+print(is_prime(n))
+
+
+# Table in Table Formate  =======================
+
+n = int(input("Enter integer: "))
+
+for i in range(1,11):
+    print(f'{n} * {i} = {n*i}')
+
+
+
+# Vowel Count =================
+
+st=input("Enter a Word =")
+def count_vowel(st):
+    return sum(1 for ch in st.lower() if ch in 'aeiou')
+print(count_vowel(st))
