@@ -4213,6 +4213,15 @@ def factorial(n):
 
 print("Factorial:", factorial(n))
 
+# factorial with recurrsion
+
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    return n*fact(n-1)
+print(fact(5))
+
+
 
 # Is Prime Number ========================================
 
@@ -4269,3 +4278,39 @@ lst = list(map(int, user_input.split()))
 result = swap_first_last_list(lst)
 
 print("After swapping first and last:", result)
+
+
+# decorator
+
+def my_decorator(func):
+    def wrapper():
+        print("Before function call")
+        func()
+        print("After function call")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+
+# maximum in list without max()
+def find_max(lst):
+    max_num = lst[0]
+    for num in lst:
+        if num > max_num:
+            max_num = num
+    return max_num
+
+print(find_max([10, 50, 30]))  
+
+# reverse string
+
+def reverse_string(s):
+    result = ""
+    for char in s:
+        result = char + result
+    return result
+
+print(reverse_string("hello"))  
