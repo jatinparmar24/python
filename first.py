@@ -1,8 +1,7 @@
-def find_max(lst):
-    max_num = lst[0]
-    for num in lst:
-        if num > max_num:
-            max_num = num
-    return max_num
-
-print(find_max([10, 50, 30]))  
+l=[1,0,3,0,4]
+l1=[]
+for i in l:
+    if l[i]==0:
+        l1[i]
+    else:
+        l1.append[i]

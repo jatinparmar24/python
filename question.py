@@ -141,3 +141,35 @@ def is_armstrong(n):
     return total == num
 
 print(is_armstrong(153)) 
+
+
+# question vowel and consonent count ==============
+
+def count_vowels_consonants(s):
+    vowels = "aeiouAEIOU"
+    v = c = 0
+    for char in s:
+        if char.isalpha():
+            if char in vowels:
+                v += 1
+            else:
+                c += 1
+    return v, c
+
+v, c = count_vowels_consonants("Python")
+print("Vowels:", v, "Consonants:", c)  
+
+
+# question second largest number ============================
+
+def second_largest(nums):
+    first = second = float('-inf')
+    for n in nums:
+        if n > first:
+            second = first
+            first = n
+        elif n > second and n != first:
+            second = n
+    return second
+
+print(second_largest([4, 7, 2, 9, 7])) 
